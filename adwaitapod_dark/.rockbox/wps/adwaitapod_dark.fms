@@ -1,0 +1,123 @@
+#
+#
+#                              $?$?$?$?$∙
+#                              ?$?$?$?'
+#                              $?$?$'
+#                              ?$?'
+#                              $'
+#               '08080808080808∙:.:.:.;
+#                '0808080808080 ':.:.:.
+#                  '80808080808   '.:.;
+#                    '080808080     ':.
+#                      '8080808       `
+#                        '08080      
+#                          '808
+#                            '0
+#
+#                   adwaitapod - version 1.0
+#                         Dook  2022
+#                          CC-BY-SA
+#
+#             https://d00k.net/projects/adwaitapod/
+#-------------------------------------------------------------------  
+#     Disabling Status Bar
+%wd
+#    Font Preloading
+%Fl(3,18-Cantarell-Bold.fnt)
+%Fl(5,20-Cantarell-Bold.fnt)
+%Fl(6,20-Cantarell-Regular.fnt)
+#
+#     Icon Preloading
+%xl(P,PlayStatus.bmp,0,0,8)
+%xl(H,HoldStatus.bmp,0,0)
+%xl(S,SleepStatus.bmp,0,0)
+%xl(L,LoadingStatus.bmp,0,0,21)
+%xl(B,BatteryStatus.bmp,0,0,22)
+%xl(A,PlayerSlider.bmp,0,0)
+%xl(E,SliderBackdrop.bmp,0,0)
+%xl(C,VolumeBackdrop.bmp,0,0)
+%xl(D,VolumePrompt.bmp,0,0)
+%xl(F,VolumeSliderEnd.bmp,0,0)
+%xl(W,WpsTL.bmp,0,0)
+%xl(X,WpsTR.bmp,122,0)
+%xl(Y,WpsBL.bmp,0,122)
+%xl(Z,WpsBR.bmp,122,122)
+%xl(R,RadioBackdrop.bmp,0,0)
+#
+%V(0,0,-,-,-)%VB
+%xd(R)
+%V(0,0,-,-,-)
+#
+#    Conditionals
+#    -----------
+#    Hold Icon
+%?mh<%Vd(hold)|>
+#
+#    Sleep Icon
+%?bs<%Vd(sleep)>
+#
+#    Loading Icon
+%?lh<%Vd(loadingstatus)>
+#
+#    Album Display
+%?C<%Vd(album)>
+#
+%Vd(tuner)
+#
+%Vd(info)
+%?mv(1.2)<%Vd(info)|%Vd(info)> #Refresh after volume
+#
+%?mv(1.2)<%Vd(volume)|>
+#     Viewports Setup
+#     ---------------
+#     Hold Status
+%Vl(hold,26,5,12,14,-)
+%xd(H)
+#     Sleep Status
+%Vl(sleep,44,6,10,12,-)
+%xd(S)
+#
+#     Play Status
+%V(4,4,16,16,-)
+%?mp<%xd(Pa)|%xd(Pb)|%xd(Pc)|%xd(Pd)|%xd(Pe)|%xd(Pf)|%xd(Pc)|%xd(Pg)|%xd(Ph)>
+#
+#     Battery Status
+%V(302,4,-,16,3)
+%?bp<%?bl<%xd(Ba)|%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)|%xd(Be)|%xd(Bf)|%xd(Bg)|%xd(Bh)|%xd(Bi)|%xd(Bj)|%xd(Bk)>|%?bl<%xd(Bl)|%xd(Bl)|%xd(Bm)|%xd(Bn)|%xd(Bo)|%xd(Bp)|%xd(Bq)|%xd(Br)|%xd(Bs)|%xd(Bt)|%xd(Bu)|%xd(Bv)>>
+#
+#     Loading Status
+%Vl(loadingstatus,280,4,16,16,-)
+%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
+#
+#    Music Player
+#    ------------
+%Vl(album,97,6,126,126,-)
+%Cl(0,0,126,126)
+%Cd%?C<%xd(W)%xd(X)%xd(Y)%xd(Z)|>
+#
+%V(10,136,300,28,5)
+%ac%s%?tx<%ty|Radio Station>
+#
+%Vl(info,10,157,300,21,6)
+%Vf(bdbebd)
+%ac%s%?tx<%tz|FM Tuner>
+#
+%Vl(info,6,215,65,20,3)
+%ac%?ts<Stereo|Mono>
+#
+%Vl(info,249,215,65,20,3)
+%ac%?tm<Scan|Preset>
+#   Play slider
+%Vl(tuner,39,192,242,14,-)
+%pb(0,0,242,14,Slider.bmp,slider,A,backdrop,E)
+#
+#   Track counter
+%Vl(info,100,214,120,25,5)
+%ac%tf MHz
+#
+#    Volume
+%Vl(volume,75,185,170,45,-)
+%xd(D)
+#
+%Vl(volume,113,215,105,3,-)
+%pv(0,0,105,3,VolumeSlider.bmp,slider,F,backdrop,C)
