@@ -18,17 +18,16 @@
 #                         Dook  2022
 #                          CC-BY-SA
 #
+#       (v) readable code & extra fonts available at (v)
 #             https://d00k.net/projects/adwaitapod/
 #-------------------------------------------------------------------  
-#     Disabling Status Bar
 %wd
-#    Font Preloading
+#
 %Fl(3,16-Cantarell-Bold.fnt)
 %Fl(4,16-Cantarell-Regular.fnt)
 %Fl(5,20-Cantarell-Bold.fnt)
 %Fl(6,20-Cantarell-Regular.fnt)
 #
-#     Icon Preloading
 %xl(P,PlayStatus.bmp,0,0,8)
 %xl(H,HoldStatus.bmp,0,0)
 %xl(S,SleepStatus.bmp,0,0)
@@ -51,117 +50,57 @@
 #
 %X(PlayerBackdrop.bmp)
 #
-#    Conditionals
-#    -----------
-#    Hold Icon
 %?mh<%Vd(hold)|>
-#
-#    Sleep Icon
 %?bs<%Vd(sleep)>
-#
-#    Loading Icon
 %?lh<%Vd(loadingstatus)>
-#
-#    Album Display
 %?C<%Vd(album)>
-#
-#%Vd(playtime)
-#pt based on seconds
 %?if(%pt, >=, 3600)<%Vd(playtimeL)|%?if(%pt, >=, 600)<%Vd(playtimeM)|%Vd(playtimeS)>>
-#
 %Vd(info)
 %?mv(1.2)<%Vd(info)|%Vd(info)> #Refresh after volume
-#
 %?mv(1.2)<%Vd(volume)|>
-#     Viewports Setup
-#     ---------------
-#     Hold Status
-%Vl(hold,26,5,12,14,-)
-%xd(H)
 #
-#     Sleep Status
-%Vl(sleep,44,6,10,12,-)
-%xd(S)
-#
-#     Play Status
+%Vl(hold,26,5,12,14,-)%xd(H)
+%Vl(sleep,44,6,10,12,-)%xd(S)
 %V(4,4,16,16,-)
 %?mp<%xd(Pa)|%xd(Pb)|%xd(Pc)|%xd(Pd)|%xd(Pe)|%xd(Pf)|%xd(Pc)|%xd(Pg)|%xd(Ph)>
-#
-#     Battery Status
 %V(302,4,-,16,3)
 %?bp<%?bl<%xd(Ba)|%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)|%xd(Be)|%xd(Bf)|%xd(Bg)|%xd(Bh)|%xd(Bi)|%xd(Bj)|%xd(Bk)>|%?bl<%xd(Bl)|%xd(Bl)|%xd(Bm)|%xd(Bn)|%xd(Bo)|%xd(Bp)|%xd(Bq)|%xd(Br)|%xd(Bs)|%xd(Bt)|%xd(Bu)|%xd(Bv)>>
-#
-#     Loading Status
 %Vl(loadingstatus,280,4,16,16,-)
 %t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
 #
-#    Music Player
-#    ------------
 %Vl(album,87,6,146,146,-)
 %Cl(0,0,146,146)
 %Cd%?C<%xd(W)%xd(X)%xd(Y)%xd(Z)|>
-#
 %V(10,152,300,28,5)
 %s%ac%?it<%it|%fn>
-#
-%Vl(info,10,173,300,21,6)
-%Vf(777767)
+%Vl(info,10,173,300,21,6)%Vf(777767)
 %ac%s%?ia<%t(6)%?if(%ig,=,Classical)<%?ic<%ic - >%ia|%ia>|%?it<%fn>>;%ac%s%?id<%t(6)%id|%t(0)>
-#
-#    Shuffle
 %V(10,221,16,14,-)
 %?ps<%xd(Ub)|%xd(Ua)>
-#    Repeat
 %V(294,220,17,16,-)
 %?mm<%xd(Ta)|%xd(Tb)|%xd(Tc)|%xd(Td)|%xd(Te)>
-#
-#    Time Info - Under 10 mins
-%Vl(playtimeS,2,201,35,16,4)
-%Vf(333333)
+%Vl(playtimeS,2,201,35,16,4)%Vf(333333)
 %ac%pc
-#
-%Vl(playtimeS,283,201,35,16,4)
-%Vf(333333)
+%Vl(playtimeS,283,201,35,16,4)%Vf(333333)
 %ac%pt
-#   Play slider
 %Vl(playtimeS,39,203,242,14,-)
 %pb(0,0,242,14,Slider.bmp,slider,A,backdrop,E)
-#
-#    Time Info - Over 10 mins
-%Vl(playtimeM,2,201,40,16,4)
-%Vf(333333)
+%Vl(playtimeM,2,201,40,16,4)%Vf(333333)
 %ac%pc
-#
-%Vl(playtimeM,278,201,40,16,4)
-%Vf(333333)
+%Vl(playtimeM,278,201,40,16,4)%Vf(333333)
 %ac%pt
-#   Play slider
 %Vl(playtimeM,45,203,230,14,-)
 %pb(0,0,230,14,Slider.bmp,slider,A,backdrop,F)
-#
-#    Time Info - Over 60 mins
-%Vl(playtimeL,2,201,50,16,4)
-%Vf(333333)
+%Vl(playtimeL,2,201,50,16,4)%Vf(333333)
 %ac%pc
-#
-%Vl(playtimeL,268,201,50,16,4)
-%Vf(333333)
+%Vl(playtimeL,268,201,50,16,4)%Vf(333333)
 %ac%pt
-#   Play slider
 %Vl(playtimeL,55,203,210,14,-)
 %pb(0,0,210,14,Slider.bmp,slider,A,backdrop,G)
-#
-#    Lossless Icon
 %Vl(info,239,136,16,16,-)
 %?or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13))<%xd(V)>
-#    Track counter
-%Vl(info,100,218,120,14,3)
-%Vf(9c9a94)
+%Vl(info,100,218,120,14,3)%Vf(9c9a94)
 %ac%pp %Sx(of) %pe
-#
-#    Volume
-%Vl(volume,75,185,170,45,-)
-%xd(D)
-#
+%Vl(volume,75,185,170,45,-)%xd(D)
 %Vl(volume,113,215,105,3,-)
 %pv(0,0,105,3,VolumeSlider.bmp,slider,J,backdrop,C)
