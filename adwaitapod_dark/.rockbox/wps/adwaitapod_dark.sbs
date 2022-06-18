@@ -85,8 +85,8 @@
 %?if(%cs, =, 1)<%?mh<|%Vd(overlays)>>
 %?if(%cs, =, 3)<%Vd(overlayr)>
 #
-%?if(%cs, =, 1)<%?mh<|%?mp<%Vd(miniplayer)|%Vd(miniplayer)|%Vd(miniplayer)|||||%Vd(miniradio)|%Vd(miniradio)>>>
-%?if(%cs, =, 10)<%?mp<%Vd(miniplayer)|%Vd(miniplayer)|%Vd(miniplayer)|||||%Vd(miniradio)|%Vd(miniradio)>>
+%?if(%cs, =, 1)<%?mh<|%?mp<%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|||||%Vd(miniradio)%Vd(albumart)|%Vd(miniradio)%Vd(albumart)>>>
+%?if(%cs, =, 10)<%?mp<%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|||||%Vd(miniradio)%Vd(albumart)|%Vd(miniradio)%Vd(albumart)>>
 %?if(%cs, =, 1)<%?mh<%?mp<|%Vd(lockplayer)%Vd(lockicon)|%Vd(lockplayer)%Vd(lockicon)|||||%Vd(lockradio)%Vd(lockicon)|%Vd(lockradio)%Vd(lockicon)>|>>
 #    Conditionals
 #    -----------
@@ -170,8 +170,8 @@
 #
 #     Music Player
 #     ------------
-%Vl(miniplayer,191,38,116,116,-)
-%?mp<|%Cl(0,0,116,116)%Cd>
+%Vl(albumart,191,38,116,116,-)
+%Cl(0,0,116,116)%Cd
 %xd(A)%xd(G)%xd(J)%xd(K)
 #    Shuffle
 %Vl(miniplayer,195,203,16,14,-)
