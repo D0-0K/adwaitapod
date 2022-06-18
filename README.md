@@ -4,7 +4,7 @@
 
 Adwaitapod is a modern, feature-rich theme for Rockbox. Taking inspiration from the GNOME desktop, this theme uses adwaita theme icons and the Cantarell typeface.
 
-[/Screenshots/adwaitapod_01.png]
+![adwaitapod_01](https://user-images.githubusercontent.com/66568057/174451366-a8aa46e6-64db-4d76-99eb-7fb21b7f843e.png)
 
 ## Features
 
@@ -25,4 +25,16 @@ Adwaitapod is a modern, feature-rich theme for Rockbox. Taking inspiration from 
     ∘ Releases with settings for smooth scrolling text (can't be uploaded to Rockbox).
     ∘ Copies of the theme's code with labelling.
     ∘ Inkscape SVG files of every individual screen in the theme.
+
+## Gallery
+
+![adwaitapod_02](https://user-images.githubusercontent.com/66568057/174451379-cd576667-dd13-4df4-9787-87047f1f8656.png)
+
+
+![adwaitapod_03](https://user-images.githubusercontent.com/66568057/174451383-6df2997f-1c95-4961-ba52-de956d7b7fc1.png)
+
+![adwaitapod_04](https://user-images.githubusercontent.com/66568057/174451387-68ba4ccc-5860-45b3-8c1f-1a07a6cc7375.png)
+
+![adwaitapod_05](https://user-images.githubusercontent.com/66568057/174451389-ece39567-c95b-42c1-8c83-0a76e23cdea9.png)
+
 
