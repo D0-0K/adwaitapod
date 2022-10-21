@@ -1,15 +1,11 @@
-# adwaitapod Github Repo
+# adwaitapod
+<a href='https://ko-fi.com/dook_' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://storage.ko-fi.com/cdn/brandasset/kofi_s_tag_white.png?' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 
-## - Extra Fonts can be found in the releases section -
+Adwaitapod is a modern, feature-rich theme for Rockbox. Taking inspiration from the GNOME desktop, this theme uses adwaita theme icons and the Cantarell typeface. The theme currently supports the iPod classic 5th gen.
 
----
-
-Adwaitapod is a modern, feature-rich theme for Rockbox. Taking inspiration from the GNOME desktop, this theme uses adwaita theme icons and the Cantarell typeface.
-
-![adwaitapod_01](https://user-images.githubusercontent.com/66568057/174451366-a8aa46e6-64db-4d76-99eb-7fb21b7f843e.png)
+![adwaitapod_01](https://user-images.githubusercontent.com/66568057/174451379-cd576667-dd13-4df4-9787-87047f1f8656.png)
 
 ## Features
-
 
 - Consistent interface with rounded corners.
 - Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.
@@ -22,21 +18,14 @@ Adwaitapod is a modern, feature-rich theme for Rockbox. Taking inspiration from 
 
 ## Extras in this repo
 
-
 - Fonts with CJK support, including full theme downloads including them.
 - Releases with settings for smooth scrolling text (can't be uploaded to Rockbox).
 - Copies of the theme's code with labelling.
-- Inkscape SVG files of every individual screen in the theme.
 
-## Gallery
+## Planned Features
 
-![adwaitapod_02](https://user-images.githubusercontent.com/66568057/174451379-cd576667-dd13-4df4-9787-87047f1f8656.png)
-
-
-![adwaitapod_03](https://user-images.githubusercontent.com/66568057/174451383-6df2997f-1c95-4961-ba52-de956d7b7fc1.png)
-
-![adwaitapod_04](https://user-images.githubusercontent.com/66568057/174451387-68ba4ccc-5860-45b3-8c1f-1a07a6cc7375.png)
-
-![adwaitapod_05](https://user-images.githubusercontent.com/66568057/174451389-ece39567-c95b-42c1-8c83-0a76e23cdea9.png)
-
+- Expanding icon support in the language packs
+- An accessibility version with improved readability
+- Support for touchscreen devices
+- Improving the base code
 
