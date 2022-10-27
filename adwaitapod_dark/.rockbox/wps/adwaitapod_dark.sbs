@@ -14,46 +14,49 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 1.0
+#                   adwaitapod - version 2 beta
 #                         Dook  2022
 #                          CC-BY-SA
 #
 #       (v) readable code & extra fonts available at (v)
 #             https://d00k.net/projects/adwaitapod/
-#-------------------------------------------------------------------  
-%?Lt<|>
-#
+#-------------------------------------------------------------------  #
 %Fl(3,18-Cantarell-Bold.fnt)
 %Fl(4,16-Cantarell-Regular.fnt)
 %Fl(5,60-Cantarell-Light.fnt)
 %Fl(6,20-Cantarell-Bold.fnt)
 #
-%xl(A,AlbumTL.bmp,0,0)
+%xl(A,AlbumTL.bmp)
 %xl(G,AlbumTR.bmp,112,0)
 %xl(J,AlbumBL.bmp,0,112)
 %xl(K,AlbumBR.bmp,112,112)
-%xl(P,PlayStatus.bmp,0,0,8)
-%xl(Q,PlayStatusDark.bmp,0,0,8)
-%xl(H,HoldStatus.bmp,0,0)
-%xl(S,SleepStatus.bmp,0,0)
-%xl(F,SleepStatusDark.bmp,0,0)
-%xl(L,LoadingStatus.bmp,0,0,21)
-%xl(I,LoadingStatusDark.bmp,0,0,21)
-%xl(B,BatteryStatus.bmp,0,0,22)
-%xl(E,BatteryStatusDark.bmp,0,0,22)
-%xl(U,ShuffleStatus.bmp,0,0,2)
-%xl(T,RepeatStatus.bmp,0,0,5)
-%xl(M,MenuBackdrop.bmp,0,0)
-%xl(N,HomeBackdrop.bmp,0,0)
-%xl(O,LockscreenBackdrop.bmp,0,0)
-%xl(C,NotifIcons.bmp,0,0,2)
-%xl(D,LockscreenNotif.bmp,0,0)
-%xl(W,LabelEdgeLeft.bmp,0,0)
+%xl(play,PlayStatus.bmp,8)
+%xl(playdark,PlayStatusDark.bmp,8)
+%xl(H,HoldStatus.bmp)
+%xl(S,SleepStatus.bmp)
+%xl(F,SleepStatusDark.bmp)
+%xl(L,LoadingStatus.bmp,21)
+%xl(I,LoadingStatusDark.bmp,21)
+%xl(battery,BatteryStatus.bmp,12)
+%xl(charge,ChargeStatus.bmp,11)
+%xl(batterydark,BatteryStatusDark.bmp,12)
+%xl(chargedark,ChargeStatusDark.bmp,11)
+%xl(shuffle,ShuffleStatus.bmp,2)
+%xl(repeat,RepeatStatus.bmp,5)
+%xl(M,MenuBackdrop.bmp)
+%xl(N,HomeBackdrop.bmp)
+%xl(O,LockscreenBackdrop.bmp)
+%xl(C,NotifIcons.bmp,2)
+%xl(D,LockscreenNotif.bmp)
+%xl(W,LabelEdgeLeft.bmp)
 %xl(X,LabelEdgeRight.bmp,171,0)
 %xl(Y,LabelEdgeRight2.bmp,296,0)
-%xl(Z,SliderEnd.bmp,0,0)
-%xl(R,QuickScreenBackdrop.bmp,0,0)
-%xl(V,RecordingBackdrop.bmp,0,0)
+%xl(Z,SliderEnd.bmp)
+%xl(R,QuickScreenBackdrop.bmp)
+%xl(V,RecordingBackdrop.bmp)
+%xl(volback,VolumeBackdrop.bmp)
+%xl(volpromp,VolumePrompt.bmp)
+%xl(volslide,VolumeSliderEnd.bmp)
 #
 %X(HomeBackdrop.bmp)
 #
@@ -78,6 +81,7 @@
 %?if(%cs, =, 1)<%?mh<|%?mp<%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|||||%Vd(miniradio)%Vd(albumart)|%Vd(miniradio)%Vd(albumart)>>>
 %?if(%cs, =, 10)<%?mp<%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|||||%Vd(miniradio)%Vd(albumart)|%Vd(miniradio)%Vd(albumart)>>
 %?if(%cs, =, 1)<%?mh<%?mp<|%Vd(lockplayer)%Vd(lockicon)|%Vd(lockplayer)%Vd(lockicon)|||||%Vd(lockradio)%Vd(lockicon)|%Vd(lockradio)%Vd(lockicon)>|>>
+%?mv(1.2)<%Vd(volume)|>
 #
 %?if(%cs, !=, 21)<%?if(%cs, !=, 1)<%?mh<%Vd(hold)|>>>
 %?if(%cs, !=, 21)<%?if(%cs, !=, 1)<%?mh<%Vd(bat)|%Vd(bat)>>>
@@ -105,13 +109,13 @@
 %Vl(sleep,44,6,10,12,-)%xd(S)
 %Vl(sleepdark,26,6,10,12,-)%xd(F)
 %Vl(play,4,4,16,16,-)
-%?mp<%xd(Pa)|%xd(Pb)|%xd(Pc)|%xd(Pd)|%xd(Pe)|%xd(Pf)|%xd(Pc)|%xd(Pg)|%xd(Ph)>
+%xd(play,%mp)
 %Vl(playdark,4,4,16,16,-)
-%?mh<%?mp<%xd(Qa)|%xd(Qb)|%xd(Qc)|%xd(Qd)|%xd(Qe)|%xd(Qf)|%xd(Qc)|%xd(Qg)|%xd(Qh)>|>
+%xd(playdark,%mp)
 %Vl(bat,302,4,-,16,3)
-%?bp<%?bl<%xd(Ba)|%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)|%xd(Be)|%xd(Bf)|%xd(Bg)|%xd(Bh)|%xd(Bi)|%xd(Bj)|%xd(Bk)>|%?bl<%xd(Bl)|%xd(Bl)|%xd(Bm)|%xd(Bn)|%xd(Bo)|%xd(Bp)|%xd(Bq)|%xd(Br)|%xd(Bs)|%xd(Bt)|%xd(Bu)|%xd(Bv)>>
+%?bp<%xd(charge,%bl)|%xd(battery,%bl)>
 %Vl(batdark,302,4,-,16,-)
-%?bp<%?bl<%xd(Ea)|%xd(Ea)|%xd(Eb)|%xd(Ec)|%xd(Ed)|%xd(Ee)|%xd(Ef)|%xd(Eg)|%xd(Eh)|%xd(Ei)|%xd(Ej)|%xd(Ek)>|%?bl<%xd(El)|%xd(El)|%xd(Em)|%xd(En)|%xd(Eo)|%xd(Ep)|%xd(Eq)|%xd(Er)|%xd(Es)|%xd(Et)|%xd(Eu)|%xd(Ev)>>
+%?bp<%xd(chargedark,%bl)|%xd(batterydark,%bl)>
 %Vl(loadingstatus,280,4,16,16,-)
 %t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
 %Vl(loadingdark,280,4,16,16,-)
@@ -127,9 +131,9 @@
 %Cl(0,0,116,116)%Cd
 %xd(A)%xd(G)%xd(J)%xd(K)
 %Vl(miniplayer,195,203,16,14,-)
-%?ps<%xd(Ub)|%xd(Ua)>
+%xd(shuffle,%ps)
 %Vl(miniplayer,286,202,17,16,-)
-%?mm<%xd(Ta)|%xd(Tb)|%xd(Tc)|%xd(Td)|%xd(Te)>
+%xd(repeat,%mm)
 %Vl(miniplayer,191,178,116,20,4)%Vf(bdbebd)
 %s%ac%?ia<%?if(%ig,=,Classical)<%?ic<%ic - >%ia|%ia>>
 %Vl(miniplayer,191,160,116,20,3)
@@ -172,3 +176,7 @@
 %Vl(usb,110,195,150,20,4)
 %Vf(c0bfbc)
 %cs%s%alEject before disconnecting
+%Vl(volume,75,185,170,45,-)
+%xd(volpromp)
+%Vl(volume,113,215,105,3,-)
+%pv(0,0,105,3,VolumeSlider.bmp,slider,volslide,backdrop,volback)
