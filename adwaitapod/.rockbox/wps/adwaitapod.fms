@@ -14,12 +14,18 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 1.0
+#                   adwaitapod - version 2.0
 #                         Dook  2022
 #                          CC-BY-SA
 #
-#       (v) readable code & extra fonts available at (v)
-#             https://d00k.net/projects/adwaitapod/
+#                       changelog v2.0:
+# reworked colours, rewritten all status icon code, general cleanup.
+#
+#  (v) commented code, CJK fonts and larger fonts available at (v)
+#             https://github.com/D0-0K/adwaitapod
+#
+#        If you've enjoyed this theme, please consider
+#         leaving a small tip as thanks (links above) 
 #-------------------------------------------------------------------  
 %wd
 #
@@ -27,41 +33,35 @@
 %Fl(5,20-Cantarell-Bold.fnt)
 %Fl(6,20-Cantarell-Regular.fnt)
 #
-%xl(P,PlayStatus.bmp,0,0,8)
-%xl(H,HoldStatus.bmp,0,0)
-%xl(S,SleepStatus.bmp,0,0)
-%xl(L,LoadingStatus.bmp,0,0,21)
-%xl(B,BatteryStatus.bmp,0,0,22)
-%xl(A,PlayerSlider.bmp,0,0)
-%xl(E,SliderBackdrop.bmp,0,0)
-%xl(C,VolumeBackdrop.bmp,0,0)
-%xl(D,VolumePrompt.bmp,0,0)
-%xl(F,VolumeSliderEnd.bmp,0,0)
-%xl(W,WpsTL.bmp,0,0)
+%xl(play,PlayStatus.bmp,9)
+%xl(hold,HoldStatus.bmp)
+%xl(sleep,SleepStatus.bmp)
+%xl(L,LoadingStatus.bmp,21)
+%xl(battery,BatteryStatus.bmp,12)
+%xl(charge,ChargeStatus.bmp,11)
+%xl(A,PlayerSlider.bmp)
+%xl(E,SliderBackdrop.bmp)
+%xl(C,VolumeBackdrop.bmp)
+%xl(D,VolumePrompt.bmp)
+%xl(F,VolumeSliderEnd.bmp)
+%xl(W,WpsTL.bmp)
 %xl(X,WpsTR.bmp,122,0)
 %xl(Y,WpsBL.bmp,0,122)
 %xl(Z,WpsBR.bmp,122,122)
-%xl(R,RadioBackdrop.bmp,0,0)
 #
-%V(0,0,-,-,-)%VB
-%xd(R)
-%V(0,0,-,-,-)
+%X(RadioBackdrop.bmp)
 #
-%?mh<%Vd(hold)|>
-%?bs<%Vd(sleep)>
 %?lh<%Vd(loadingstatus)>
 %?C<%Vd(album)>
 %Vd(tuner)
 %Vd(info)
-%?mv(1.2)<%Vd(info)|%Vd(info)> #Refresh after volume
+%?mv(1.2)<%Vd(info)|%Vd(info)>
 %?mv(1.2)<%Vd(volume)|>
 #
-%Vl(hold,26,5,12,14,-)%xd(H)
-%Vl(sleep,44,6,10,12,-)%xd(S)
-%V(4,4,16,16,-)
-%?mp<%xd(Pa)|%xd(Pb)|%xd(Pc)|%xd(Pd)|%xd(Pe)|%xd(Pf)|%xd(Pc)|%xd(Pg)|%xd(Ph)>
-%V(302,4,-,16,3)
-%?bp<%?bl<%xd(Ba)|%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)|%xd(Be)|%xd(Bf)|%xd(Bg)|%xd(Bh)|%xd(Bi)|%xd(Bj)|%xd(Bk)>|%?bl<%xd(Bl)|%xd(Bl)|%xd(Bm)|%xd(Bn)|%xd(Bo)|%xd(Bp)|%xd(Bq)|%xd(Br)|%xd(Bs)|%xd(Bt)|%xd(Bu)|%xd(Bv)>>
+%V(26,5,12,14,-) %xd(hold,%mh)
+%V(44,6,10,12,-) %xd(sleep,%bs)
+%V(4,4,16,16,-) %xd(play,%mp)
+%V(302,4,-,16,3) %?bp<%xd(charge,%bl)|%xd(battery,%bl)>
 %Vl(loadingstatus,280,4,16,16,-)
 %t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
 #

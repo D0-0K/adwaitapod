@@ -14,12 +14,18 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 1.0
+#                   adwaitapod - version 2.0
 #                         Dook  2022
 #                          CC-BY-SA
 #
-#       (v) readable code & extra fonts available at (v)
-#             https://d00k.net/projects/adwaitapod/
+#                      changelog v2.0:
+# reworked colours, rewritten all status icon code, general cleanup.
+#
+#  (v) commented code, CJK fonts and larger fonts available at (v)
+#              https://github.com/D0-0K/adwaitapod
+#
+#        If you've enjoyed this theme, please consider
+#         leaving a small tip as thanks (links above) 
 #-------------------------------------------------------------------
 %wd
 #
@@ -28,9 +34,9 @@
 %Fl(5,20-Cantarell-Bold.fnt)
 %Fl(6,20-Cantarell-Regular.fnt)
 #
-%xl(play,PlayStatus.bmp,8)
-%xl(H,HoldStatus.bmp)
-%xl(S,SleepStatus.bmp)
+%xl(play,PlayStatus.bmp,9)
+%xl(hold,HoldStatus.bmp)
+%xl(sleep,SleepStatus.bmp)
 %xl(L,LoadingStatus.bmp,21)
 %xl(battery,BatteryStatus.bmp,12)
 %xl(charge,ChargeStatus.bmp,11)
@@ -51,8 +57,6 @@
 #
 %X(PlayerBackdrop.bmp)
 #
-%?mh<%Vd(hold)|>
-%?bs<%Vd(sleep)>
 %?lh<%Vd(loadingstatus)>
 %?C<%Vd(album)>
 %?if(%pt, >=, 3600)<%Vd(playtimeL)|%?if(%pt, >=, 600)<%Vd(playtimeM)|%Vd(playtimeS)>>
@@ -60,12 +64,10 @@
 %?mv(1.2)<%Vd(info)|%Vd(info)> #Refresh after volume
 %?mv(1.2)<%Vd(volume)|>
 #
-%Vl(hold,26,5,12,14,-)%xd(H)
-%Vl(sleep,44,6,10,12,-)%xd(S)
-%V(4,4,16,16,-)
-%xd(play,%mp)
-%V(302,4,-,16,3)
-%?bp<%xd(charge,%bl)|%xd(battery,%bl)>
+%V(26,5,12,14,-) %xd(hold,%mh)
+%V(44,6,10,12,-) %xd(sleep,%bs)
+%V(4,4,16,16,-) %xd(play,%mp)
+%V(302,4,-,16,3) %?bp<%xd(charge,%bl)|%xd(battery,%bl)>
 %Vl(loadingstatus,280,4,16,16,-)
 %t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
 #
@@ -76,10 +78,8 @@
 %s%ac%?it<%it|%fn>
 %Vl(info,10,173,300,21,6)%Vf(bdbebd)
 %ac%s%?ia<%t(6)%?if(%ig,=,Classical)<%?ic<%ic - >%ia|%ia>|%?it<%fn>>;%ac%s%?id<%t(6)%id|%t(0)>
-%V(10,221,16,14,-)
-%xd(shuffle,%ps)
-%V(294,220,17,16,-)
-%xd(repeat,%mm)
+%V(10,221,16,14,-)%xd(shuffle,%ps)
+%V(294,220,17,16,-)%xd(repeat,%mm)
 %Vl(playtimeS,2,201,35,16,4)
 %ac%pc
 %Vl(playtimeS,283,201,35,16,4)
@@ -102,7 +102,6 @@
 %?or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13))<%xd(V)>
 %Vl(info,100,218,120,14,3)%Vf(bdbebd)
 %ac%pp %Sx(of) %pe
-%Vl(volume,75,185,170,45,-)
-%xd(D)
+%Vl(volume,75,185,170,45,-)%xd(D)
 %Vl(volume,113,215,105,3,-)
 %pv(0,0,105,3,VolumeSlider.bmp,slider,J,backdrop,C)

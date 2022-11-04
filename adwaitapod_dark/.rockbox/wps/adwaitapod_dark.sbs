@@ -14,13 +14,19 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 2 beta
+#                   adwaitapod - version 2.0
 #                         Dook  2022
 #                          CC-BY-SA
 #
-#       (v) readable code & extra fonts available at (v)
-#             https://d00k.net/projects/adwaitapod/
-#-------------------------------------------------------------------  #
+#                      changelog v2.0:
+# reworked colours, rewritten all status icon code, general cleanup.
+#
+#  (v) commented code, CJK fonts and larger fonts available at (v)
+#              https://github.com/D0-0K/adwaitapod
+#
+#        If you've enjoyed this theme, please consider
+#         leaving a small tip as thanks (links above) 
+#-------------------------------------------------------------------
 %Fl(3,18-Cantarell-Bold.fnt)
 %Fl(4,16-Cantarell-Regular.fnt)
 %Fl(5,60-Cantarell-Light.fnt)
@@ -30,11 +36,11 @@
 %xl(G,AlbumTR.bmp,112,0)
 %xl(J,AlbumBL.bmp,0,112)
 %xl(K,AlbumBR.bmp,112,112)
-%xl(play,PlayStatus.bmp,8)
-%xl(playdark,PlayStatusDark.bmp,8)
-%xl(H,HoldStatus.bmp)
-%xl(S,SleepStatus.bmp)
-%xl(F,SleepStatusDark.bmp)
+%xl(play,PlayStatus.bmp,9)
+%xl(playdark,PlayStatusDark.bmp,9)
+%xl(hold,HoldStatus.bmp)
+%xl(sleep,SleepStatus.bmp)
+%xl(sleepdark,SleepStatusDark.bmp)
 %xl(L,LoadingStatus.bmp,21)
 %xl(I,LoadingStatusDark.bmp,21)
 %xl(battery,BatteryStatus.bmp,12)
@@ -43,17 +49,17 @@
 %xl(chargedark,ChargeStatusDark.bmp,11)
 %xl(shuffle,ShuffleStatus.bmp,2)
 %xl(repeat,RepeatStatus.bmp,5)
-%xl(M,MenuBackdrop.bmp)
-%xl(N,HomeBackdrop.bmp)
-%xl(O,LockscreenBackdrop.bmp)
+%xl(menu,MenuBackdrop.bmp)
+%xl(home,HomeBackdrop.bmp)
+%xl(lockscreen,LockscreenBackdrop.bmp)
 %xl(C,NotifIcons.bmp,2)
-%xl(D,LockscreenNotif.bmp)
+%xl(locknotif,LockscreenNotif.bmp)
 %xl(W,LabelEdgeLeft.bmp)
 %xl(X,LabelEdgeRight.bmp,171,0)
 %xl(Y,LabelEdgeRight2.bmp,296,0)
 %xl(Z,SliderEnd.bmp)
-%xl(R,QuickScreenBackdrop.bmp)
-%xl(V,RecordingBackdrop.bmp)
+%xl(quick,QuickScreenBackdrop.bmp)
+%xl(record,RecordingBackdrop.bmp)
 %xl(volback,VolumeBackdrop.bmp)
 %xl(volpromp,VolumePrompt.bmp)
 %xl(volslide,VolumeSliderEnd.bmp)
@@ -61,11 +67,11 @@
 %X(HomeBackdrop.bmp)
 #
 %V(0,0,-,-,-)%VB
-%?if(%cs, !=, 10)<%?if(%cs, !=, 3)<%?if(%cs, !=, 1)<%?mh<%xd(M)|%xd(M)>>>>
-%?if(%cs, =, 1)<%?mh<%?mp<%xd(O)|%xd(D)>|%xd(N)>>
-%?if(%cs, =, 3)<%xd(V)>
-%?if(%cs, =, 10)<%xd(R)>
-%?if(%cs, =, 21)<%xd(D)>
+%?if(%cs, !=, 10)<%?if(%cs, !=, 3)<%?if(%cs, !=, 1)<%?mh<%xd(menu)|%xd(menu)>>>>
+%?if(%cs, =, 1)<%?mh<%?mp<%xd(lockscreen)|%xd(locknotif)>|%xd(home)>>
+%?if(%cs, =, 3)<%xd(record)>
+%?if(%cs, =, 10)<%xd(quick)>
+%?if(%cs, =, 21)<%xd(locknotif)>
 %V(0,0,-,-,-)
 #
 %?if(%cs, =, 1)<%?mh<|%Vd(status)>>
@@ -73,7 +79,7 @@
 %?if(%cs, =, 1)<%?mh<|%VI(main)%Vd(m)>>
 %?if(%cs, =, 10)<%VI(main)%Vd(quick)>
 %?if(%cs,=, 3)<%VI(main)%Vd(record)>
-%?if(%cs, =, 21)<%xd(D)>
+%?if(%cs, =, 21)<%xd(locknotif)>
 %?if(%cs, =, 21)<%VI(usb)%Vd(usb)%Vd(time)>
 %?if(%cs, !=, 21)<%?if(%cs, !=, 10)<%?if(%cs, !=, 3)<%?if(%cs, !=, 1)<%VI(menu)%Vd(overlayl)>>>>
 %?if(%cs, =, 1)<%?mh<|%Vd(overlays)>>
@@ -105,17 +111,13 @@
 %Vl(overlays,4,30,175,207,-)%xd(W)%xd(X)
 %Vl(overlayr,4,122,175,114,-)%xd(W)%xd(X)
 %Vl(overlayl,7,30,300,207,-)%xd(W)%xd(Y)
-%Vl(hold,26,4,12,14,-)%xd(H)
-%Vl(sleep,44,6,10,12,-)%xd(S)
-%Vl(sleepdark,26,6,10,12,-)%xd(F)
-%Vl(play,4,4,16,16,-)
-%xd(play,%mp)
-%Vl(playdark,4,4,16,16,-)
-%xd(playdark,%mp)
-%Vl(bat,302,4,-,16,3)
-%?bp<%xd(charge,%bl)|%xd(battery,%bl)>
-%Vl(batdark,302,4,-,16,-)
-%?bp<%xd(chargedark,%bl)|%xd(batterydark,%bl)>
+%Vl(hold,26,4,12,14,-) %xd(hold,%mh)
+%Vl(sleep,44,6,10,12,-) %xd(sleep,%bs)
+%Vl(sleepdark,26,6,10,12,-) %xd(sleepdark,%bs)
+%Vl(play,4,4,16,16,-) %xd(play,%mp)
+%Vl(playdark,4,4,16,16,-) %xd(playdark,%mp)
+%Vl(bat,302,4,-,16,3) %?bp<%xd(charge,%bl)|%xd(battery,%bl)>
+%Vl(batdark,302,4,-,16,-) %?bp<%xd(chargedark,%bl)|%xd(batterydark,%bl)>
 %Vl(loadingstatus,280,4,16,16,-)
 %t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
 %Vl(loadingdark,280,4,16,16,-)
