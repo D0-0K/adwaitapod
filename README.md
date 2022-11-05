@@ -29,5 +29,3 @@ Adwaitapod is a modern, feature-rich theme for Rockbox. Taking inspiration from 
 
 - Expanding icon support in the language packs.
 - Port for the Shanling Q1.
-
-![comparison](https://github.com/D0-0K/adwaitapod/blob/main/Screenshots/comparison.png?raw=true)
