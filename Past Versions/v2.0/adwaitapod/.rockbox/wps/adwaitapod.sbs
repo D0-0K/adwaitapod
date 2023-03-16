@@ -1,0 +1,181 @@
+#
+#
+#                              $?$?$?$?$∙
+#                              ?$?$?$?'
+#                              $?$?$'
+#                              ?$?'
+#                              $'
+#               '08080808080808∙:.:.:.;
+#                '0808080808080 ':.:.:.
+#                  '80808080808   '.:.;
+#                    '080808080     ':.
+#                      '8080808       `
+#                        '08080      
+#                          '808
+#                            '0
+#
+#                   adwaitapod - version 2 beta
+#                         Dook  2022
+#                          CC-BY-SA
+#
+#                       changelog v2.0:
+# reworked colours, rewritten all status icon code, general cleanup.
+#
+#  (v) commented code, CJK fonts and larger fonts available at (v)
+#             https://github.com/D0-0K/adwaitapod
+#
+#        If you've enjoyed this theme, please consider
+#         leaving a small tip as thanks (links above) 
+#-------------------------------------------------------------------
+%Fl(3,18-Cantarell-Bold.fnt)
+%Fl(4,16-Cantarell-Regular.fnt)
+%Fl(5,60-Cantarell-Light.fnt)
+%Fl(6,20-Cantarell-Bold.fnt)
+#
+%xl(A,AlbumTL.bmp)
+%xl(G,AlbumTR.bmp,112,0)
+%xl(J,AlbumBL.bmp,0,112)
+%xl(K,AlbumBR.bmp,112,112)
+%xl(play,PlayStatus.bmp,9)
+%xl(playdark,PlayStatusDark.bmp,9)
+%xl(hold,HoldStatus.bmp)
+%xl(sleep,SleepStatus.bmp)
+%xl(sleepdark,SleepStatusDark.bmp)
+%xl(L,LoadingStatus.bmp,21)
+%xl(I,LoadingStatusDark.bmp,21)
+%xl(battery,BatteryStatus.bmp,12)
+%xl(charge,ChargeStatus.bmp,11)
+%xl(batterydark,BatteryStatusDark.bmp,12)
+%xl(chargedark,ChargeStatusDark.bmp,11)
+%xl(shuffle,ShuffleStatus.bmp,2)
+%xl(repeat,RepeatStatus.bmp,5)
+%xl(menu,MenuBackdrop.bmp)
+%xl(home,HomeBackdrop.bmp)
+%xl(lockscreen,LockscreenBackdrop.bmp)
+%xl(C,NotifIcons.bmp,2)
+%xl(locknotif,LockscreenNotif.bmp)
+%xl(W,LabelEdgeLeft.bmp)
+%xl(X,LabelEdgeRight.bmp,171,0)
+%xl(Y,LabelEdgeRight2.bmp,296,0)
+%xl(Z,SliderEnd.bmp)
+%xl(quick,QuickScreenBackdrop.bmp)
+%xl(record,RecordingBackdrop.bmp)
+%xl(volback,VolumeBackdrop.bmp)
+%xl(volpromp,VolumePrompt.bmp)
+%xl(volslide,VolumeSliderEnd.bmp)
+#
+%X(HomeBackdrop.bmp)
+#
+%V(0,0,-,-,-)%VB
+%?if(%cs, !=, 10)<%?if(%cs, !=, 3)<%?if(%cs, !=, 1)<%?mh<%xd(menu)|%xd(menu)>>>>
+%?if(%cs, =, 1)<%?mh<%?mp<%xd(lockscreen)|%xd(locknotif)>|%xd(home)>>
+%?if(%cs, =, 3)<%xd(record)>
+%?if(%cs, =, 10)<%xd(quick)>
+%?if(%cs, =, 21)<%xd(locknotif)>
+%V(0,0,-,-,-)
+#
+%?if(%cs, =, 1)<%?mh<|%Vd(status)>>
+%?if(%cs, !=, 21)<%?if(%cs, !=, 1)<%Vd(status)>>
+%?if(%cs, =, 1)<%?mh<|%VI(main)%Vd(m)>>
+%?if(%cs, =, 10)<%VI(main)%Vd(quick)>
+%?if(%cs,=, 3)<%VI(main)%Vd(record)>
+%?if(%cs, =, 21)<%xd(locknotif)>
+%?if(%cs, =, 21)<%VI(usb)%Vd(usb)%Vd(time)>
+%?if(%cs, !=, 21)<%?if(%cs, !=, 10)<%?if(%cs, !=, 3)<%?if(%cs, !=, 1)<%VI(menu)%Vd(overlayl)>>>>
+%?if(%cs, =, 1)<%?mh<|%Vd(overlays)>>
+%?if(%cs, =, 3)<%Vd(overlayr)>
+%?if(%cs, =, 1)<%?mh<|%?mp<%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|||||%Vd(miniradio)%Vd(albumart)|%Vd(miniradio)%Vd(albumart)>>>
+%?if(%cs, =, 10)<%?mp<%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|%Vd(miniplayer)%Vd(albumart)|||||%Vd(miniradio)%Vd(albumart)|%Vd(miniradio)%Vd(albumart)>>
+%?if(%cs, =, 1)<%?mh<%?mp<|%Vd(lockplayer)%Vd(lockicon)|%Vd(lockplayer)%Vd(lockicon)|||||%Vd(lockradio)%Vd(lockicon)|%Vd(lockradio)%Vd(lockicon)>|>>
+%?mv(1.2)<%Vd(volume)|>
+#
+%?if(%cs, !=, 21)<%?if(%cs, !=, 1)<%?mh<%Vd(hold)|>>>
+%?if(%cs, !=, 21)<%?if(%cs, !=, 1)<%?mh<%Vd(bat)|%Vd(bat)>>>
+%?if(%cs, =, 21)<%Vd(batdark)>
+%?if(%cs, =, 1)<%?mh<%Vd(batdark)|%Vd(bat)>>
+%?if(%cs, !=, 21)<%?if(%cs, !=, 1)<%Vd(play)>>
+%?if(%cs, =, 1)<%?mh<%Vd(playdark)|%Vd(play)>>
+%?if(%cs, !=, 1)<%?bs<%Vd(sleep)>>
+%?if(%cs, =, 1)<%?mh<%?bs<%Vd(sleepdark)>|%?bs<%Vd(sleep)>>>
+%?mh<%?lh<%Vd(loadingdark)>|%?if(%cs, !=, 21)<|%?lh<%Vd(loadingstatus)>>>
+%?if(%cs, =, 21)<%?lh<%Vd(loadingdark)>>
+%?if(%cs, =, 1)<%?mh<%Vd(time)>>
+%?if(%cs, =, 1)<%?mh<%Vd(text)>>
+#
+%Vl(status,0,0,320,24,-)
+%Vl(status,56,3,-56,20,3)
+%s%ac%?cs<%?cf<%cH:%cM|%cl:%cM %cP>||Recording|FM Radio|%Lt|%Lt|%Lt|%Lt|%Lt|%?cf<%cH:%cM|%cl:%cM %cP> - %?if(%bl, =, 100)<CGD|%bl%%>|%Lt|%Lt|%Lt|%Lt|%?if(%Lt, =,Context Menu)<Perform Action...|%Lt>|%Lt|%Lt|%Lt|%Lt|%Lt|>
+%Vi(usb,0,0,1,1,-)%Vf(000000)
+%Vi(main,4,30,175,207,-)
+%Vi(menu,7,30,300,207,-)
+%Vl(overlays,4,30,175,207,-)%xd(W)%xd(X)
+%Vl(overlayr,4,122,175,114,-)%xd(W)%xd(X)
+%Vl(overlayl,7,30,300,207,-)%xd(W)%xd(Y)
+%Vl(hold,26,4,12,14,-) %xd(hold,%mh)
+%Vl(sleep,44,6,10,12,-) %xd(sleep,%bs)
+%Vl(sleepdark,26,6,10,12,-) %xd(sleepdark,%bs)
+%Vl(play,4,4,16,16,-) %xd(play,%mp)
+%Vl(playdark,4,4,16,16,-) %xd(playdark,%mp)
+%Vl(bat,302,4,-,16,3) %?bp<%xd(charge,%bl)|%xd(battery,%bl)>
+%Vl(batdark,302,4,-,16,-) %?bp<%xd(chargedark,%bl)|%xd(batterydark,%bl)>
+%Vl(loadingstatus,280,4,16,16,-)
+%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
+%Vl(loadingdark,280,4,16,16,-)
+%t(0.1)%xd(Ia);%t(0.1)%xd(Ib);%t(0.1)%xd(Ic);%t(0.1)%xd(Id);%t(0.1)%xd(Ie);%t(0.1)%xd(If);%t(0.1)%xd(Ig);%t(0.1)%xd(Ih);%t(0.1)%xd(Ii);%t(0.1)%xd(Ij);%t(0.1)%xd(Ik);%t(0.1)%xd(Il);%t(0.1)%xd(Im);%t(0.1)%xd(In);%t(0.1)%xd(Io);%t(0.1)%xd(Ip);%t(0.1)%xd(Iq);%t(0.1)%xd(Ir);%t(0.1)%xd(Is);%t(0.1)%xd(It);%t(0.1)%xd(Iu)
+%Vl(m,0,22,320,218,-)%Vf(6B6D6B)
+
+
+        
+    
+        scroll  to  start
+#
+%Vl(albumart,191,38,116,116,-)
+%Cl(0,0,116,116)%Cd
+%xd(A)%xd(G)%xd(J)%xd(K)
+%Vl(miniplayer,195,203,16,14,-)
+%xd(shuffle,%ps)
+%Vl(miniplayer,286,202,17,16,-)
+%xd(repeat,%mm)
+%Vl(miniplayer,191,178,116,20,4)%Vf(6B6D6B)
+%s%ac%?ia<%?if(%ig,=,Classical)<%?ic<%ic - >%ia|%ia>>
+%Vl(miniplayer,191,160,116,20,3)
+%s%ac%?it<%it|%fn>
+%Vl(miniradio,191,178,116,20,4)%Vf(6B6D6B)
+%s%ac%?tx<%tz|FM Tuner>
+%Vl(miniradio,191,160,116,20,3)
+%s%ac%?tx<%ty|Radio Station>
+
+#
+%Vl(record,190,172,119,20,6)
+%ac%Rh:%Rn:%Rs
+%Vl(record,193,198,50,20,3)
+%ac%?Re<PCM|Aiff|Wav|MP3>
+%Vl(record,255,198,50,20,3)
+%ac%?Rf<16|48|32|48|44|32|24|22|16|12|11|8>kHz
+%Vl(record,200,157,100,14,-)
+%pR(0,0,100,14,Slider.bmp,slider,Z)
+#
+%Vl(time,100,45,120,50,5)%Vf(ffffff)
+%ac%ck:%cM
+%Vl(time,60,104,200,20,4)%Vf(ffffff)
+%ac%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday> %cb %cd
+%Vl(lockplayer,110,175,150,20,3)%Vf(ffffff)
+%cs%s%al%?it<%it|%fn>
+%Vl(lockplayer,110,195,150,20,4)%Vf(c0bfbc)
+%cs%s%al%?ia<%?if(%ig,=,Classical)<%?ic<%ic - >%ia|%ia>>
+%cs%s%al%?tx<%tz|FM Tuner>
+%Vl(lockradio,110,175,150,20,3)%Vf(ffffff)
+%cs%s%al%?tx<%ty|Radio Station>
+%Vl(lockradio,110,195,150,20,4)%Vf(c0bfbc)
+%cs%s%al%?tx<%tz|FM Tuner>
+%Vl(lockicon,60,172,45,45,-)%xd(Ca)
+%Vl(usb, 60,172,45,45,-)
+%?if(%cs, =, 21)<%xd(Cb)>
+%Vl(usb,110,175,150,20,3)%Vf(ffffff)
+%cs%alConnected to USB
+%Vl(usb,110,195,150,20,4)%Vf(c0bfbc)
+%cs%s%alEject before disconnecting
+%Vl(volume,75,185,170,45,-)
+%xd(volpromp)
+%Vl(volume,113,215,105,3,-)
+%pv(0,0,105,3,VolumeSlider.bmp,slider,volslide,backdrop,volback)

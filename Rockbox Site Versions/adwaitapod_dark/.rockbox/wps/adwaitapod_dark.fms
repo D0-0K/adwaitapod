@@ -1,0 +1,85 @@
+#
+#
+#                              $?$?$?$?$∙
+#                              ?$?$?$?'
+#                              $?$?$'
+#                              ?$?'
+#                              $'
+#               '08080808080808∙:.:.:.;
+#                '0808080808080 ':.:.:.
+#                  '80808080808   '.:.;
+#                    '080808080     ':.
+#                      '8080808       `
+#                        '08080      
+#                          '808
+#                            '0
+#
+#                   adwaitapod - version 2.0
+#                         Dook  2022
+#                          CC-BY-SA
+#
+#                       changelog v2.0:
+# reworked colours, rewritten all status icon code, general cleanup.
+#
+#  (v) commented code, CJK fonts and larger fonts available at (v)
+#             https://github.com/D0-0K/adwaitapod
+#
+#        If you've enjoyed this theme, please consider
+#         leaving a small tip as thanks (links above) 
+#-------------------------------------------------------------------   
+%wd
+#
+%Fl(3,18-Cantarell-Bold.fnt)
+%Fl(5,20-Cantarell-Bold.fnt)
+%Fl(6,20-Cantarell-Regular.fnt)
+#
+%xl(play,PlayStatus.bmp,9)
+%xl(hold,HoldStatus.bmp)
+%xl(sleep,SleepStatus.bmp)
+%xl(L,LoadingStatus.bmp,21)
+%xl(battery,BatteryStatus.bmp,12)
+%xl(charge,ChargeStatus.bmp,11)
+%xl(A,PlayerSlider.bmp)
+%xl(E,SliderBackdrop.bmp)
+%xl(C,VolumeBackdrop.bmp)
+%xl(D,VolumePrompt.bmp)
+%xl(F,VolumeSliderEnd.bmp)
+%xl(W,WpsTL.bmp)
+%xl(X,WpsTR.bmp,122,0)
+%xl(Y,WpsBL.bmp,0,122)
+%xl(Z,WpsBR.bmp,122,122)
+#
+%X(RadioBackdrop.bmp)
+#
+%?lh<%Vd(loadingstatus)>
+%?C<%Vd(album)>
+%Vd(tuner)
+%Vd(info)
+%?mv(1.2)<%Vd(info)|%Vd(info)>
+%?mv(1.2)<%Vd(volume)|>
+#
+%V(26,5,12,14,-) %xd(hold,%mh)
+%V(44,6,10,12,-) %xd(sleep,%bs)
+%V(4,4,16,16,-) %xd(play,%mp)
+%V(302,4,-,16,3) %?bp<%xd(charge,%bl)|%xd(battery,%bl)>
+%Vl(loadingstatus,280,4,16,16,-)
+%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll);%t(0.1)%xd(Lm);%t(0.1)%xd(Ln);%t(0.1)%xd(Lo);%t(0.1)%xd(Lp);%t(0.1)%xd(Lq);%t(0.1)%xd(Lr);%t(0.1)%xd(Ls);%t(0.1)%xd(Lt);%t(0.1)%xd(Lu)
+#
+%Vl(album,97,6,126,126,-)
+%Cl(0,0,126,126)
+%Cd%?C<%xd(W)%xd(X)%xd(Y)%xd(Z)|>
+%V(10,136,300,28,5)
+%ac%s%?tx<%ty|Radio Station>
+%Vl(info,10,157,300,21,6)%Vf(bdbebd)
+%ac%s%?tx<%tz|FM Tuner>
+%Vl(info,6,215,65,20,3)
+%ac%?ts<Stereo|Mono>
+%Vl(info,249,215,65,20,3)
+%ac%?tm<Scan|Preset>
+%Vl(tuner,39,192,242,14,-)
+%pb(0,0,242,14,Slider.bmp,slider,A,backdrop,E)
+%Vl(info,100,214,120,25,5)
+%ac%tf MHz
+%Vl(volume,75,185,170,45,-)%xd(D)
+%Vl(volume,113,215,105,3,-)
+%pv(0,0,105,3,VolumeSlider.bmp,slider,F,backdrop,C)
