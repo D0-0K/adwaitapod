@@ -315,13 +315,13 @@
 %dr(0,39,-,1,dedfde)%dr(0,76,-,1,dedfde)
 %Vl(SecTextConfig,12,211,296,20,-)%VB%xd(BoxBottom)
 %Vl(SecTextButtons,19,87,16,16,-)%?if(%LR,=,1)<%?Lc<%xd(RadioButton,2)|%xd(RadioButton,1)>>
-%Vl(SecTextConfig,48,113,-20,20,4)%VB%al%Sx(Album) %Sx(Title) and %Sx(Artist) %Sx(Name)
+%Vl(SecTextConfig,48,113,-20,20,4)%VB%al%Sx(Album) %Sx(Title) and %Sx(Artist) Name
 %Vl(SecTextButtons,19,109,16,16,-)%?if(%LR,=,2)<%?Lc<%xd(RadioButton,2)|%xd(RadioButton,1)>>
 %Vl(SecTextConfig,48,151,220,20,4)%VB%al%Sx(Album) %Sx(Title)
 %Vl(SecTextButtons,19,131,16,16,-)%?if(%LR,=,3)<%?Lc<%xd(RadioButton,2)|%xd(RadioButton,1)>>
-%Vl(SecTextConfig,48,189,220,20,4)%VB%al%Sx(Artist) %Sx(Name)
+%Vl(SecTextConfig,48,189,220,20,4)%VB%al%Sx(Artist) Name
 #
-%Vl(AlbumArtConfig,12,35,-12,20,3)%VB%al%Sx(Album Art) %Sx(Settings)
+%Vl(AlbumArtConfig,12,35,-12,20,3)%VB%al%Sx(Album) Art %Sx(Settings)
 %Vl(AlbumArtConfig,12,57,-12,20,4)%VB%Vf(6b6d6b)%alSets album art corners to be round or not.
 %Vl(AlbumArtConfig,12,77,-12,20,4)%VB%Vf(6b6d6b)%alThis affects all uses of album art.
 %Vl(AlbumArtConfig,12,105,296,106,-)%VB%xd(BoxTop)
