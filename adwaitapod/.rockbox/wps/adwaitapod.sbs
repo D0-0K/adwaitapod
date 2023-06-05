@@ -30,6 +30,7 @@
 %Fl(4,18-Cantarell-Regular.fnt)
 %Fl(5,66-Cantarell-Light.fnt,16)
 %Fl(7,150-Adwaitapod-Icons.fnt,2)
+%Fl(9,1-Cantarell-Regular.fnt,11)
 #--- Icons ---#
 %xl(HoldIcon,HoldStatus.bmp,2,1)
 %xl(SleepIcon,SleepStatus.bmp,2,1)
@@ -114,9 +115,10 @@
 %?if(%cs, =, 1)<%?mh<|%VI(HalfWidth)%Vd(HalfWidth)%Vd(PageTitle)>>
 %?and(%if(%cs, !=, 21),%if(%cs, !=, 10),%if(%cs, !=, 3),%if(%cs, !=, 1),%if(%Lt, !=, %Sx(Volume Display)),%if(%Lt, !=, %Sx(Status Bar)),%if(%Lt, !=, %Sx(Battery Display)),%if(%Lt, !=, %Sx(Backlight on Hold)))<%VI(FullWidth)%Vd(FullWidth)%Vd(PageTitle)>
 %?or(%if(%cs, =, 21),%if(%cs, =, 10),%and(%if(%cs, =, 1),%mh))<|%Vd(StatusBar)>
-%?or(%if(%cs, =, 21),%if(%cs, =, 10))<%VI(Empty)>
+%?if(%cs, =, 10)<%VI(Empty)>
+%?if(%cs, =, 21)<%VI(USB)>
 #- pick AOD or Lockscreen based on user choice -#
-%?if(%St(backlight on button hold), !=, off)<%?if(%cs, =, 1)<%?mh<%Vd(Lockscreen)%?mp<%?bp<|%Vd(LowPower)>|%Vd(LockPlayer)>%?mp<|%Vd(LockMusic)|%Vd(LockMusic)|||||%Vd(LockRadio)>>>>
+%?if(%St(backlight on button hold), !=, off)<%?if(%cs, =, 1)<%?mh<%Vd(Lockscreen)%Vd(ScreenWipe)%?mp<%?bp<|%Vd(LowPower)>|%Vd(LockPlayer)>%?mp<|%Vd(LockMusic)|%Vd(LockMusic)|||||%Vd(LockRadio)>>>>
 %?if(%St(backlight on button hold), =, off)<%?if(%cs, =, 1)<%?mh<%Vd(AlwaysOnDisplay)%?mp<|%?pS(0.2)<%Vd(AODMusic)|%Vd(AODMusic)>||||||%Vd(AODRadio)|>>>>
 #- Don't display homescreen miniplayer when lockscreen on -#
 %?if(%cs, =, 1)<%?mh<|%Vd(ScrollReminder)%?mp<%Vd(HomescreenWidget)|%Vd(Miniplayer)%?mp<|%Vd(MiniMusic)|%Vd(MiniMusic)|||||%Vd(MiniRadio)>>>>
@@ -135,7 +137,8 @@
 #
 # 13 offset to prevent OOB in Quickscreen.
 # without it, causes a crash on some devices.
-%Vi(Empty,13,0,0,0,4)
+%Vi(Empty,180,0,88,61,9)%Vf(f7f7f7)
+%Vi(USB,0,0,1,1,9)
 %Vi(FullWidth,4,29,-4,-,-)
 %Vi(HalfWidth,4,29,175,-,-)
 %Vl(HalfWidth,183,31,1,203,-)%dr(0,0,-,-,d6d7d6)
@@ -199,7 +202,7 @@
 %?mp<|%xd(MiniPlayIcon,1)|%xd(MiniPlayIcon,2)|||||%xd(MiniPlayIcon,1)|%xd(MiniPlayIcon,2)>
 #
 #------------ Lockscreen Layer ------------#
-%Vl(Lockscreen,0,0,-,-,-)
+%Vl(ScreenWipe,0,0,-,-,-)
 %Vl(LockRefresh,4,30,175,207,-)
 %Vl(Lockscreen,4,4,16,16,-)%xd(SleepIconDark,%bs)
 %Vl(Lockscreen,303,4,14,16,-)%?bp<%xd(ChargingIconDark,%bl)|%xd(BatteryIconDark,%bl)>
