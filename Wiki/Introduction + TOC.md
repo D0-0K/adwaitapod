@@ -1,7 +1,7 @@
 ## Introduction
 
 ## Table of Contents
-
+brief
 - **Getting Started**.
   - Installing the theme.
   - Using the Theme.
