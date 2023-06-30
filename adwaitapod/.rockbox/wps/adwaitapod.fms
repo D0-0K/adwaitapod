@@ -46,25 +46,25 @@
 %xl(BatteryIconAOD,Icons/BatteryStatusAOD.bmp,12)
 %xl(ChargingIconAOD,Icons/ChargeStatusAOD.bmp,11)
 #--- Player Elements ---#
-%xl(PlayerSlider,PlayerSlider.bmp)
-%xl(SliderBackdrop,SliderBackdrop.bmp)
-%xl(TLoverlay,WpsTL.bmp)
-%xl(TRoverlay,WpsTR.bmp,118,0)
-%xl(BLoverlay,WpsBL.bmp,0,118)
-%xl(BRoverlay,WpsBR.bmp,118,118)
-%xl(BackdropL,FmsBackdropL.bmp,81,0)
-%xl(BackdropR,FmsBackdropR.bmp,223,0)
-%xl(BackdropT,FmsBackdropT.bmp,97,0)
-%xl(BackdropB,FmsBackdropB.bmp,97,132)
+%xl(PlayerSlider,Players/PlayerSlider.bmp)
+%xl(SliderBackdrop,Players/SliderBackdrop.bmp)
+%xl(TLoverlay,Players/WpsTL.bmp)
+%xl(TRoverlay,Players/WpsTR.bmp,118,0)
+%xl(BLoverlay,Players/WpsBL.bmp,0,118)
+%xl(BRoverlay,Players/WpsBR.bmp,118,118)
+%xl(BackdropL,Players/FmsBackdropL.bmp,81,0)
+%xl(BackdropR,Players/FmsBackdropR.bmp,223,0)
+%xl(BackdropT,Players/FmsBackdropT.bmp,97,0)
+%xl(BackdropB,Players/FmsBackdropB.bmp,97,132)
 #--- Background assets ---#
-%xl(RadioFallback,RadioFallback.bmp,97,6)
-%xl(ButtonL,RadioButtonLeft.bmp,6,215)
-%xl(ButtonR,RadioButtonRight.bmp,249,215)
+%xl(RadioFallback,Players/RadioFallback.bmp,97,6)
+%xl(ButtonL,Players/RadioButtonLeft.bmp,6,215)
+%xl(ButtonR,Players/RadioButtonRight.bmp,249,215)
 #-- Volume Slider Overlay --#
-%xl(VolumeBackdrop,VolumeBackdrop.bmp)
-%xl(VolumeIcons,Icons/VolumePromptIcons.bmp,4)
-%xl(VolumeSliderBackdrop,VolumeSliderBackdrop.bmp)
-%xl(VolumeSliderEnd,VolumeSliderEnd.bmp)
+%xl(VolumeBackdrop,VolumePrompt/Backdrop.bmp)
+%xl(VolumeIcons,VolumePrompt/Icons.bmp,4)
+%xl(VolumeSliderBackdrop,VolumePrompt/SliderBackdrop.bmp)
+%xl(VolumeSliderEnd,VolumePrompt/SliderEnd.bmp)
 #--- Lockscreen Images ---#
 %xl(Lockscreen,Lockscreen/Wallpaper.bmp)
 %xl(LockPlayIcon,Lockscreen/NotifPlayIcon.bmp,2)
@@ -129,7 +129,7 @@
 %?lh<%t(0.1)%xd(Ia);%t(0.1)%xd(Ib);%t(0.1)%xd(Ic);%t(0.1)%xd(Id);%t(0.1)%xd(Ie);%t(0.1)%xd(If);%t(0.1)%xd(Ig);%t(0.1)%xd(Ih);%t(0.1)%xd(Ii);%t(0.1)%xd(Ij);%t(0.1)%xd(Ik);%t(0.1)%xd(Il)>
 #
 %Vl(Lockscreen,0,32,-,55,7)%Vf(ffffff)%ac%?cf<%cH:%cM|%cl:%cM %cP>
-%Vl(Lockscreen,0,101,-,20,3)%Vf(ffffff)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %cb %cd
+%Vl(Lockscreen,0,101,-,20,3)%Vf(ffffff)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %?or(%if(%ss(0,7,%St(lang)), =, chinese),%if(%St(lang), =, magyar),%if(%St(lang), =, lietuviu),%if(%St(lang), =, japanese),%if(%St(lang), =, korean))<%cb %cd|%?if(%St(lang), =, english-us)<%cb %cd|%cd %cb>>
 #
 #---Notification---#
 %Vl(Lockscreen,16,150,288,75,-)%xd(NotificationMusic)
@@ -148,7 +148,7 @@
 %?lh<%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll)>
 #
 %Vl(AlwaysOnDisplay,0,32,-,55,7)%Vf(000000)%ac%?cf<%cH:%cM|%cl:%cM %cP>
-%Vl(AlwaysOnDisplay,0,101,-,20,3)%Vf(000000)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %cb %cd
+%Vl(AlwaysOnDisplay,0,101,-,20,3)%Vf(000000)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %?or(%if(%ss(0,7,%St(lang)), =, chinese),%if(%St(lang), =, magyar),%if(%St(lang), =, lietuviu),%if(%St(lang), =, japanese),%if(%St(lang), =, korean))<%cb %cd|%?if(%St(lang), =, english-us)<%cb %cd|%cd %cb>>
 #
 %Vl(AlwaysOnDisplay,10,163,-10,20,4)%Vf(000000)%ac%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
 %Vl(AlwaysOnDisplay,10,183,-10,22,3)%Vf(000000)%ac%s%?tx<%tz|adwaitapod>
