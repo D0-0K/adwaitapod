@@ -110,7 +110,7 @@
 #--- Quickscreen Button Logic ---#
 %?if(%cs, =, 10)<%?and(%if(%St(qs left),=,shuffle),%if(%St(qs right),=,repeat),%if(%St(qs top),=,brightness),%if(%St(qs bottom),=,brightness))<%?ps<%dr(33,140,92,38,3982e7)|%dr(33,140,92,38,dedede)>%?mm<%dr(33,188,92,38,dedede)|%dr(33,188,92,38,3982e7)>%dr(184,140,92,38,3982e7)%dr(184,188,92,38,3982e7)>>
 #------------ Foreground Layer ------------#
-%V(0,0,-,24,-)
+%V(0,0,-,29,4)
 #-- Screen Logic --#
 %?if(%cs, =, 1)<%?mh<|%VI(HalfWidth)%Vd(HalfWidth)%Vd(PageTitle)>>
 %?and(%if(%cs, !=, 21),%if(%cs, !=, 10),%if(%cs, !=, 3),%if(%cs, !=, 1),%if(%Lt, !=, %Sx(Volume Display)),%if(%Lt, !=, %Sx(Status Bar)),%if(%Lt, !=, %Sx(Battery Display)),%if(%Lt, !=, %Sx(Backlight on Hold)))<%VI(FullWidth)%Vd(FullWidth)%Vd(PageTitle)>
