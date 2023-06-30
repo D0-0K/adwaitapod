@@ -26,8 +26,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="1.0147803"
-     inkscape:cx="326.67169"
-     inkscape:cy="964.24811"
+     inkscape:cx="944.53942"
+     inkscape:cy="886.39876"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -2150,7 +2150,10 @@
            x="114.704"
            y="17.84">Preferences</tspan></text></g><g
        id="g49209"
-       transform="translate(-740,280)"><image
+       transform="translate(-740,280)"
+       inkscape:export-filename="../../Screenshots/720x540/shared/light/Lockscreen_02.png"
+       inkscape:export-xdpi="216"
+       inkscape:export-ydpi="216"><image
          width="320"
          height="239.99998"
          preserveAspectRatio="none"
@@ -2217,7 +2220,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388);display:inline;opacity:1;fill:#ffffff"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5754">13:00</tspan></text><text
+           id="tspan3173">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;opacity:1;fill:#ffffff;stroke-width:0.999999"
          x="846.19202"
@@ -6906,18 +6909,18 @@
          style="font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect15938-6-1-9-8);display:inline;opacity:1;fill:#2c2b2c;fill-opacity:1"><tspan
            x="34.660156"
            y="298.96289"
-           id="tspan5758"><tspan
+           id="tspan3177"><tspan
              style="font-weight:bold;font-size:16px;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold'"
-             id="tspan5756">Aiff</tspan></tspan></text><text
+             id="tspan3175">Aiff</tspan></tspan></text><text
          xml:space="preserve"
          transform="translate(227.16807,-72.490944)"
          id="text15936-6-7-0-6"
          style="font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect15938-6-1-9-2-7);display:inline;opacity:1;fill:#2c2b2c;fill-opacity:1"><tspan
            x="34.660156"
            y="298.96289"
-           id="tspan5762"><tspan
+           id="tspan3181"><tspan
              style="font-weight:bold;font-size:16px;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold'"
-             id="tspan5760">41kHz</tspan></tspan></text><text
+             id="tspan3179">41kHz</tspan></tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;display:inline;opacity:1;fill:#2c2b2c;fill-opacity:1;stroke:url(#radialGradient8167-2);stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
          x="265.51782"
@@ -7208,9 +7211,9 @@
          style="font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect15938);display:inline"><tspan
            x="34.660156"
            y="277.94047"
-           id="tspan5766"><tspan
+           id="tspan3185"><tspan
              style="font-weight:bold;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#333333"
-             id="tspan5764">Stereo</tspan></tspan></text><rect
+             id="tspan3183">Stereo</tspan></tspan></text><rect
          style="fill:#e7e7e7;fill-opacity:1;stroke:none;stroke-width:1.08806;stroke-linecap:square;paint-order:fill markers stroke"
          id="rect10804-8"
          width="65"
@@ -7225,9 +7228,9 @@
          style="font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect15938-1);display:inline"><tspan
            x="34.660156"
            y="277.94047"
-           id="tspan5770"><tspan
+           id="tspan3189"><tspan
              style="font-weight:bold;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#333333"
-             id="tspan5768">Preset</tspan></tspan></text><rect
+             id="tspan3187">Preset</tspan></tspan></text><rect
          style="fill:#dedfde;fill-opacity:1;stroke:none;stroke-width:0"
          id="rect140783-2-7-7-5-7"
          width="242"
@@ -7270,7 +7273,10 @@
          clip-path="url(#clipPath43868)"
          transform="translate(1011.6786,1472.9378)" /></g><g
        id="g49191"
-       transform="translate(-740,280)"><image
+       transform="translate(-740,280)"
+       inkscape:export-filename="../../Screenshots/720x540/shared/light/Lockscreen_01.png"
+       inkscape:export-xdpi="216"
+       inkscape:export-ydpi="216"><image
          width="320"
          height="239.99998"
          preserveAspectRatio="none"
@@ -7288,7 +7294,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9-7);display:inline;fill:#ffffff"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5772">13:00</tspan></text><text
+           id="tspan3191">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#ffffff;stroke-width:0.999999"
          x="1226.192"
@@ -7336,7 +7342,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9-9);display:inline;fill:#ffffff"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5774">13:00</tspan></text><text
+           id="tspan3193">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#ffffff;stroke-width:0.999999"
          x="1566.192"
@@ -7460,7 +7466,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9-1);display:inline;fill:#ffffff"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5776">13:00</tspan></text><text
+           id="tspan3195">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#ffffff;stroke-width:0.999999"
          x="2366.1919"
@@ -7512,7 +7518,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9-3);display:inline;fill:#ffffff"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5778">13:00</tspan></text><text
+           id="tspan3197">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#ffffff;stroke-width:0.999999"
          x="2026.192"
@@ -7613,7 +7619,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9);display:inline;fill:#ffffff"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5780">13:00</tspan></text><text
+           id="tspan3199">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#ffffff;stroke-width:0.999999"
          x="106.19202"
@@ -8069,13 +8075,13 @@
              style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Light';letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-35-7-84-8);display:inline;fill:#000000;stroke-width:1.00347"><tspan
                x="-58.755859"
                y="139.97601"
-               id="tspan5788"><tspan
+               id="tspan3207"><tspan
                  style="-inkscape-font-specification:'Cantarell, Light';font-variant-numeric:tabular-nums"
-                 id="tspan5782">13</tspan><tspan
+                 id="tspan3201">13</tspan><tspan
                  style="font-weight:normal;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-numeric:oldstyle-nums;font-variation-settings:'wght' 300"
-                 id="tspan5784">:</tspan><tspan
+                 id="tspan3203">:</tspan><tspan
                  style="-inkscape-font-specification:'Cantarell, Light';font-variant-numeric:tabular-nums"
-                 id="tspan5786">32</tspan></tspan></text><text
+                 id="tspan3205">32</tspan></tspan></text><text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#000000;stroke-width:1.00347"
              x="189.69604"
@@ -8183,13 +8189,13 @@
              style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Light';letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-35-2-0-0-6-6);display:inline;fill:#ffffff;stroke-width:1.00347"><tspan
                x="-58.755859"
                y="139.97601"
-               id="tspan5796"><tspan
+               id="tspan3215"><tspan
                  style="-inkscape-font-specification:'Cantarell, Light';font-variant-numeric:tabular-nums"
-                 id="tspan5790">13</tspan><tspan
+                 id="tspan3209">13</tspan><tspan
                  style="font-weight:normal;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-numeric:oldstyle-nums;font-variation-settings:'wght' 300"
-                 id="tspan5792">:</tspan><tspan
+                 id="tspan3211">:</tspan><tspan
                  style="-inkscape-font-specification:'Cantarell, Light';font-variant-numeric:tabular-nums"
-                 id="tspan5794">32</tspan></tspan></text><text
+                 id="tspan3213">32</tspan></tspan></text><text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#ffffff;stroke-width:1.00347"
              x="-124.91934"
@@ -8391,13 +8397,13 @@
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Light';letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-35-2-0-0-5-4);display:inline;fill:#3584e4;fill-opacity:1"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5804"><tspan
+           id="tspan3223"><tspan
              style="font-weight:normal;-inkscape-font-specification:Cantarell;font-variant-numeric:tabular-nums"
-             id="tspan5798">13</tspan><tspan
+             id="tspan3217">13</tspan><tspan
              style="font-weight:normal;-inkscape-font-specification:Cantarell;font-variant-numeric:oldstyle-nums"
-             id="tspan5800">:</tspan><tspan
+             id="tspan3219">:</tspan><tspan
              style="font-weight:normal;-inkscape-font-specification:Cantarell;font-variant-numeric:tabular-nums"
-             id="tspan5802">32</tspan></tspan></text><text
+             id="tspan3221">32</tspan></tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0.37px;display:inline;fill:#292829;fill-opacity:1;stroke:none;stroke-width:0.999999"
          x="113.704"
@@ -8448,7 +8454,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9-7-1);display:inline;fill:#1a1a1a;fill-opacity:1"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5806">13:00</tspan></text><text
+           id="tspan3225">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke-width:0.999999"
          x="106.19202"
@@ -8522,7 +8528,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:tabular-nums;font-variant-east-asian:normal;font-variation-settings:'wght' 300;letter-spacing:0px;white-space:pre;shape-inside:url(#rect8388-9-7-1-2);display:inline;fill:#1a1a1a;fill-opacity:1"><tspan
            x="-58.755859"
            y="139.97601"
-           id="tspan5808">13:00</tspan></text><text
+           id="tspan3227">13:00</tspan></text><text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke-width:0.999999"
          x="466.19199"
