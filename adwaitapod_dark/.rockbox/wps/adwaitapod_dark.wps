@@ -34,46 +34,47 @@
 %Fl(7,20-Cantarell-Bold.fnt)
 %Fl(8,66-Cantarell-Light.fnt,16)
 #-- Icons --#
-%xl(PlayIcon,PlayStatus.bmp,9)
-%xl(SleepIcon,SleepStatus.bmp,2,1)
-%xl(SleepIconAOD,SleepStatusAOD.bmp,2,1)
-%xl(HoldIcon,HoldStatus.bmp,2,1)
-%xl(L,LoadingStatus.bmp,12)
-%xl(I,LoadingStatusAOD.bmp,12)
-%xl(BatteryIcon,BatteryStatus.bmp,12)
-%xl(ChargingIcon,ChargeStatus.bmp,11)
-%xl(BatteryIconAOD,BatteryStatusAOD.bmp,12)
-%xl(ChargingIconAOD,ChargeStatusAOD.bmp,11)
-%xl(ShuffleIcon,ShuffleStatus.bmp,2)
-%xl(RepeatIcon,RepeatStatus.bmp,5)
-%xl(LosslessIcon,LosslessIcon.bmp)
+%xl(PlayIcon,Icons/PlayStatus.bmp,9)
+%xl(SleepIcon,Icons/SleepStatus.bmp,2,1)
+%xl(SleepIconAOD,Icons/SleepStatusAOD.bmp,2,1)
+%xl(HoldIcon,Icons/HoldStatus.bmp,2,1)
+%xl(L,Icons/LoadingStatus.bmp,12)
+%xl(I,Icons/LoadingStatusAOD.bmp,12)
+%xl(BatteryIcon,Icons/BatteryStatus.bmp,12)
+%xl(ChargingIcon,Icons/ChargeStatus.bmp,11)
+%xl(BatteryIconAOD,Icons/BatteryStatusAOD.bmp,12)
+%xl(ChargingIconAOD,Icons/ChargeStatusAOD.bmp,11)
+%xl(ShuffleIcon,Icons/ShuffleStatus.bmp,2)
+%xl(RepeatIcon,Icons/RepeatStatus.bmp,5)
+%xl(LosslessIcon,Icons/LosslessIcon.bmp)
+%xl(ExplicitIcon,Icons/ExplicitIcon.bmp)
 #-- Playtime Slider --#
-%xl(PlayerSlider,PlayerSlider.bmp)
-%xl(SliderBackdrop3Digits,SliderBackdrop.bmp)
-%xl(SliderBackdrop4Digits,SliderBackdrop4Digits.bmp)
-%xl(SliderBackdrop5Digits,SliderBackdrop5Digits.bmp)
-%xl(SliderBackdrop6Digits,SliderBackdrop6Digits.bmp)
+%xl(PlayerSlider,Players/PlayerSlider.bmp)
+%xl(SliderBackdrop3Digits,Players/SliderBackdrop.bmp)
+%xl(SliderBackdrop4Digits,Players/SliderBackdrop4Digits.bmp)
+%xl(SliderBackdrop5Digits,Players/SliderBackdrop5Digits.bmp)
+%xl(SliderBackdrop6Digits,Players/SliderBackdrop6Digits.bmp)
 #-- Album Art --#
-%xl(TLoverlay,WpsTL.bmp)
-%xl(TRoverlay,WpsTR.bmp,138,0)
-%xl(BLoverlay,WpsBL.bmp,0,138)
-%xl(BRoverlay,WpsBR.bmp,138,138)
-%xl(BackdropL,WpsBackdropL.bmp,69,0)
-%xl(BackdropR,WpsBackdropR.bmp,233,0)
-%xl(BackdropT,WpsBackdropT.bmp,87,0)
-%xl(BackdropB,WpsBackdropB.bmp,87,152)
-%xl(PlayerFallback,PlayerFallback.bmp,87,6)
+%xl(TLoverlay,Players/WpsTL.bmp)
+%xl(TRoverlay,Players/WpsTR.bmp,138,0)
+%xl(BLoverlay,Players/WpsBL.bmp,0,138)
+%xl(BRoverlay,Players/WpsBR.bmp,138,138)
+%xl(BackdropL,Players/WpsBackdropL.bmp,69,0)
+%xl(BackdropR,Players/WpsBackdropR.bmp,233,0)
+%xl(BackdropT,Players/WpsBackdropT.bmp,87,0)
+%xl(BackdropB,Players/WpsBackdropB.bmp,87,152)
+%xl(PlayerFallback,Players/PlayerFallback.bmp,87,6)
 #-- Volume Slider Overlay --#
-%xl(VolumeBackdrop,VolumeBackdrop.bmp)
-%xl(VolumeIcons,VolumePromptIcons.bmp,4)
-%xl(VolumeSliderBackdrop,VolumeSliderBackdrop.bmp)
-%xl(VolumeSliderEnd,VolumeSliderEnd.bmp)
+%xl(VolumeBackdrop,VolumePrompt/Backdrop.bmp)
+%xl(VolumeIcons,VolumePrompt/Icons.bmp,4)
+%xl(VolumeSliderBackdrop,VolumePrompt/SliderBackdrop.bmp)
+%xl(VolumeSliderEnd,VolumePrompt/SliderEnd.bmp)
 #--- Lockscreen Images ---#
-%xl(Lockscreen,Lockscreen.bmp)
-%xl(AODBackdrop,AODBackdrop.bmp)
-%xl(LockPlayIcon,LockscreenPlayIcon.bmp,2)
-%xl(NotificationMusic,LockscreenNotifMusic.bmp,14,12)
-%xl(NotificationBackdrop,LockscreenNotification.bmp,16,150)
+%xl(Lockscreen,Lockscreen/Wallpaper.bmp)
+%xl(AODBackdrop,Lockscreen/AODBackdrop.bmp)
+%xl(LockPlayIcon,Lockscreen/NotifPlayIcon.bmp,2)
+%xl(NotificationMusic,Lockscreen/NotifMusic.bmp,14,12)
+%xl(NotificationBackdrop,Lockscreen/Notification.bmp,16,150)
 #
 #------------ Background Layer ------------#
 %V(0,0,-,-,-)%VB
@@ -119,33 +120,36 @@
 %Vl(Playtime3Digits,2,201,32,16,3)
 %ar%pc
 %Vl(Playtime3Digits,39,203,242,14,-)
-%pb(0,0,242,14,Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop3Digits)
+%pb(0,0,242,14,Players/Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop3Digits)
 %Vl(Playtime3Digits,286,201,32,16,3)
 %al%pt
 #
 %Vl(Playtime4Digits,2,201,40,16,3)
 %ar%pc
 %Vl(Playtime4Digits,47,203,226,14,-)
-%pb(0,0,226,14,Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop4Digits)
+%pb(0,0,226,14,Players/Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop4Digits)
 %Vl(Playtime4Digits,278,201,40,16,3)
 %al%pt
 #
 %Vl(Playtime5Digits,2,201,53,16,3)
 %ar%pc
 %Vl(Playtime5Digits,60,203,200,14,-)
-%pb(0,0,200,14,Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop5Digits)
+%pb(0,0,200,14,Players/Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop5Digits)
 %Vl(Playtime5Digits,265,201,53,16,3)
 %al%pt
 #
 %Vl(Playtime6Digits,2,201,61,16,3)
 %ar%pc
 %Vl(Playtime6Digits,68,203,184,14,-)
-%pb(0,0,184,14,Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop6Digits)
+%pb(0,0,184,14,Players/Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop6Digits)
 %Vl(Playtime6Digits,257,201,61,16,3)
 %al%pt
 #
 %Vl(info,239,136,16,16,-)
 %?or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13))<%xd(LosslessIcon)>
+#
+%Vl(info,65,136,16,16,-)
+%?if(%ss(0, 1, %fn), =,🅴)<%xd(ExplicitIcon)>
 #
 %Vl(info,35,218,132,18,5)%Vf(BDBABD)%?if(%pe, !=, 1)<%ar%pp %Sx(of)>
 %Vl(info,171,218,115,18,5)%Vf(BDBABD)
@@ -159,7 +163,7 @@
 %?and(%if(%pv, <=, -30),%if(%pv, >, -60))<%xd(VolumeIcons,3)>
 %?if(%pv, >, -30)<%xd(VolumeIcons,4)>
 %Vl(volume,116,205,117,5,-)
-%?if(%pv, =, -90)<%xd(VolumeSliderBackdrop)|%pv(0,0,117,5,VolumeSlider.bmp,slider,VolumeSliderEnd,backdrop,VolumeSliderBackdrop)>
+%?if(%pv, =, -90)<%xd(VolumeSliderBackdrop)|%pv(0,0,117,5,VolumePrompt/Slider.bmp,slider,VolumeSliderEnd,backdrop,VolumeSliderBackdrop)>
 #
 #------------ Lockscreen Layer ------------#
 %Vl(Lockscreen,0,0,-,-,-)
@@ -170,7 +174,7 @@
 %?lh<%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll)>
 #
 %Vl(Lockscreen,0,32,-,55,8)%ac%?cf<%cH:%cM|%cl:%cM %cP>
-%Vl(Lockscreen,0,101,-,20,4)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %cb %cd
+%Vl(Lockscreen,0,101,-,20,4)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %?or(%if(%ss(0,7,%St(lang)), =, chinese),%if(%St(lang), =, magyar),%if(%St(lang), =, lietuviu),%if(%St(lang), =, japanese),%if(%St(lang), =, korean))<%cb %cd|%?if(%St(lang), =, english-us)<%cb %cd|%cd %cb>>
 #
 #---Notification---#
 %Vl(Lockscreen,16,150,288,75,-)%xd(NotificationMusic)
@@ -190,7 +194,7 @@
 %?lh<%t(0.1)%xd(Ia);%t(0.1)%xd(Ib);%t(0.1)%xd(Ic);%t(0.1)%xd(Id);%t(0.1)%xd(Ie);%t(0.1)%xd(If);%t(0.1)%xd(Ig);%t(0.1)%xd(Ih);%t(0.1)%xd(Ii);%t(0.1)%xd(Ij);%t(0.1)%xd(Ik);%t(0.1)%xd(Il)>
 #
 %Vl(AlwaysOnDisplay,0,32,-,55,8)%Vf(000000)%ac%?cf<%cH:%cM|%cl:%cM %cP>
-%Vl(AlwaysOnDisplay,0,101,-,20,4)%Vf(000000)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %cb %cd
+%Vl(AlwaysOnDisplay,0,101,-,20,4)%Vf(000000)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %?or(%if(%ss(0,7,%St(lang)), =, chinese),%if(%St(lang), =, magyar),%if(%St(lang), =, lietuviu),%if(%St(lang), =, japanese),%if(%St(lang), =, korean))<%cb %cd|%?if(%St(lang), =, english-us)<%cb %cd|%cd %cb>>
 #
 %Vl(AlwaysOnDisplay,10,163,-10,20,5)%Vf(000000)%s%ac%?it<%it|%fn>
 %Vl(AlwaysOnDisplay,10,183,-10,22,4)%Vf(000000)

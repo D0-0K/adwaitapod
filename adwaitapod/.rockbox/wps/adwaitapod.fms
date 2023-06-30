@@ -33,18 +33,18 @@
 %Fl(6,20-Cantarell-Bold.fnt)
 %Fl(7,66-Cantarell-Light.fnt,16)
 #-- Icons --#
-%xl(PlayIcon,PlayStatus.bmp,9)
-%xl(HoldIcon,HoldStatus.bmp,2,1)
-%xl(SleepIcon,SleepStatus.bmp,2,1)
-%xl(SleepIconDark,SleepStatusDark.bmp,2,1)
-%xl(L,LoadingStatus.bmp,12)
-%xl(I,LoadingStatusDark.bmp,12)
-%xl(BatteryIcon,BatteryStatus.bmp,12)
-%xl(ChargingIcon,ChargeStatus.bmp,11)
-%xl(BatteryIconDark,BatteryStatusDark.bmp,12)
-%xl(ChargingIconDark,ChargeStatusDark.bmp,11)
-%xl(BatteryIconAOD,BatteryStatusAOD.bmp,12)
-%xl(ChargingIconAOD,ChargeStatusAOD.bmp,11)
+%xl(PlayIcon,Icons/PlayStatus.bmp,9)
+%xl(HoldIcon,Icons/HoldStatus.bmp,2,1)
+%xl(SleepIcon,Icons/SleepStatus.bmp,2,1)
+%xl(SleepIconDark,Icons/SleepStatusDark.bmp,2,1)
+%xl(L,Icons/LoadingStatus.bmp,12)
+%xl(I,Icons/LoadingStatusDark.bmp,12)
+%xl(BatteryIcon,Icons/BatteryStatus.bmp,12)
+%xl(ChargingIcon,Icons/ChargeStatus.bmp,11)
+%xl(BatteryIconDark,Icons/BatteryStatusDark.bmp,12)
+%xl(ChargingIconDark,Icons/ChargeStatusDark.bmp,11)
+%xl(BatteryIconAOD,Icons/BatteryStatusAOD.bmp,12)
+%xl(ChargingIconAOD,Icons/ChargeStatusAOD.bmp,11)
 #--- Player Elements ---#
 %xl(PlayerSlider,PlayerSlider.bmp)
 %xl(SliderBackdrop,SliderBackdrop.bmp)
@@ -62,14 +62,14 @@
 %xl(ButtonR,RadioButtonRight.bmp,249,215)
 #-- Volume Slider Overlay --#
 %xl(VolumeBackdrop,VolumeBackdrop.bmp)
-%xl(VolumeIcons,VolumePromptIcons.bmp,4)
+%xl(VolumeIcons,Icons/VolumePromptIcons.bmp,4)
 %xl(VolumeSliderBackdrop,VolumeSliderBackdrop.bmp)
 %xl(VolumeSliderEnd,VolumeSliderEnd.bmp)
 #--- Lockscreen Images ---#
-%xl(Lockscreen,Lockscreen.bmp)
-%xl(LockPlayIcon,LockscreenPlayIcon.bmp,2)
-%xl(NotificationMusic,LockscreenNotifMusic.bmp,14,12)
-%xl(NotificationBackdrop,LockscreenNotification.bmp,16,150)
+%xl(Lockscreen,Lockscreen/Wallpaper.bmp)
+%xl(LockPlayIcon,Lockscreen/NotifPlayIcon.bmp,2)
+%xl(NotificationMusic,Lockscreen/NotifMusic.bmp,14,12)
+%xl(NotificationBackdrop,Lockscreen/Notification.bmp,16,150)
 #
 #------------ Background Layer ------------#
 %V(0,0,-,-,-)%VB
@@ -108,7 +108,7 @@
 %Vl(Player,252,215,59,20,4)
 %s%ac%?tm<%Sx(Scan)|%Sx(Preset)>
 %Vl(Player,39,192,242,14,-)
-%pb(0,0,242,14,Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop)
+%pb(0,0,242,14,Players/Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop)
 %Vl(info,100,214,120,25,6)
 %ac%tf MHz
 #
@@ -118,7 +118,7 @@
 %Vl(volume,84,197,24,21,-)
 %?if(%pv, =, -90)<%xd(VolumeIcons,1)>%?and(%if(%pv, <=, -60),%if(%pv, >, -90))<%xd(VolumeIcons,2)>%?and(%if(%pv, <=, -30),%if(%pv, >, -60))<%xd(VolumeIcons,3)>%?if(%pv, >, -30)<%xd(VolumeIcons,4)>
 %Vl(volume,116,205,117,5,-)
-%?if(%pv, =, -90)<%xd(VolumeSliderBackdrop)|%pv(0,0,117,5,VolumeSlider.bmp,slider,VolumeSliderEnd,backdrop,VolumeSliderBackdrop)>
+%?if(%pv, =, -90)<%xd(VolumeSliderBackdrop)|%pv(0,0,117,5,VolumePrompt/Slider.bmp,slider,VolumeSliderEnd,backdrop,VolumeSliderBackdrop)>
 #
 #------------ Lockscreen Layer ------------#
 %Vl(Lockscreen,0,0,-,-,-)
