@@ -33,44 +33,44 @@
 %Fl(6,20-Cantarell-Bold.fnt)
 %Fl(7,66-Cantarell-Light.fnt,16)
 #-- Icons --#
-%xl(SleepIcon,Icons/SleepStatus.bmp,2,1)
-%xl(SleepIconAOD,Icons/SleepStatusAOD.bmp,2,1)
-%xl(HoldIcon,Icons/HoldStatus.bmp,2,1)
-%xl(L,Icons/LoadingStatus.bmp,12)
-%xl(I,Icons/LoadingStatusAOD.bmp,12)
-%xl(BatteryIcon,Icons/BatteryStatus.bmp,12)
-%xl(ChargingIcon,Icons/ChargeStatus.bmp,11)
-%xl(BatteryIconAOD,Icons/BatteryStatusAOD.bmp,12)
-%xl(ChargingIconAOD,Icons/ChargeStatusAOD.bmp,11)
-%xl(PlaybackStatus,Icons/PlaybackStatusIcons.bmp,6)
+%xl(SleepIcon,SleepStatus.bmp,2,1)
+%xl(SleepIconAOD,SleepStatusAOD.bmp,2,1)
+%xl(HoldIcon,HoldStatus.bmp,2,1)
+%xl(L,LoadingStatus.bmp,12)
+%xl(I,LoadingStatusAOD.bmp,12)
+%xl(BatteryIcon,BatteryStatus.bmp,12)
+%xl(ChargingIcon,ChargeStatus.bmp,11)
+%xl(BatteryIconAOD,BatteryStatusAOD.bmp,12)
+%xl(ChargingIconAOD,ChargeStatusAOD.bmp,11)
+%xl(PlaybackStatus,PlaybackStatusIcons.bmp,6)
 #-- Playtime Slider --#
-%xl(PlayerSlider,Players/PlayerSlider.bmp)
-%xl(SliderBackdrop,Players/SliderBackdrop.bmp)
+%xl(PlayerSlider,PlayerSlider.bmp)
+%xl(SliderBackdrop,SliderBackdrop.bmp)
 #-- Album Art --#
-%xl(TLoverlay,Players/WpsTL.bmp)
-%xl(TRoverlay,Players/WpsTR.bmp,152,0)
-%xl(BLoverlay,Players/WpsBL.bmp,0,152)
-%xl(BRoverlay,Players/WpsBR.bmp,152,152)
-%xl(BackdropL,Players/WpsBackdropL.bmp,0,10)
-%xl(BackdropR,Players/WpsBackdropR.bmp,170,10)
-%xl(BackdropT,Players/WpsBackdropT.bmp,10,10)
-%xl(BackdropB,Players/WpsBackdropB.bmp,10,180)
-%xl(PlayerFallback,Players/PlayerFallback.bmp,10,20)
+%xl(TLoverlay,WpsTL.bmp)
+%xl(TRoverlay,WpsTR.bmp,152,0)
+%xl(BLoverlay,WpsBL.bmp,0,152)
+%xl(BRoverlay,WpsBR.bmp,152,152)
+%xl(BackdropL,WpsBackdropL.bmp,0,10)
+%xl(BackdropR,WpsBackdropR.bmp,170,10)
+%xl(BackdropT,WpsBackdropT.bmp,10,10)
+%xl(BackdropB,WpsBackdropB.bmp,10,180)
+%xl(PlayerFallback,PlayerFallback.bmp,10,20)
 #-- Player UI --#
-%xl(PlayerStatusButton,Players/PlayerStatusButton.bmp,11,207)
-%xl(PlayIcon,Players/PlayIcon.bmp,4)
-%xl(PlaylistPositionIcon,Players/PlaylistPositionIndicators.bmp,4)
+%xl(PlayerStatusButton,PlayerStatusButton.bmp,11,207)
+%xl(PlayIcon,PlayIcon.bmp,4)
+%xl(PlaylistPositionIcon,PlaylistPositionIndicators.bmp,4)
 #-- Volume Slider Overlay --#
-%xl(VolumeBackdrop,VolumePrompt/Backdrop.bmp)
-%xl(VolumeIcons,VolumePrompt/Icons.bmp,4)
-%xl(VolumeSliderBackdrop,VolumePrompt/SliderBackdrop.bmp)
-%xl(VolumeSliderEnd,VolumePrompt/SliderEnd.bmp)
+%xl(VolumeBackdrop,VolumeBackdrop.bmp)
+%xl(VolumeIcons,VolumePromptIcons.bmp,4)
+%xl(VolumeSliderBackdrop,VolumeSliderBackdrop.bmp)
+%xl(VolumeSliderEnd,VolumeSliderEnd.bmp)
 #--- Lockscreen Images ---#
-%xl(Lockscreen,Lockscreen/Wallpaper.bmp)
-%xl(AODBackdrop,Lockscreen/AODBackdrop.bmp)
-%xl(LockPlayIcon,Lockscreen/NotifPlayIcon.bmp,2)
-%xl(NotificationMusic,Lockscreen/NotifMusic.bmp,14,12)
-%xl(NotificationBackdrop,Lockscreen/Notification.bmp,16,150)
+%xl(Lockscreen,Wallpaper.bmp)
+%xl(AODBackdrop,AODBackdrop.bmp)
+%xl(LockPlayIcon,NotifPlayIcon.bmp,2)
+%xl(NotificationMusic,NotifMusic.bmp,14,12)
+%xl(NotificationBackdrop,Notification.bmp,16,150)
 #
 #------------ Background Layer ------------#
 %V(0,0,-,-,-)%VB
@@ -130,7 +130,7 @@
 %?ps<%t(7)%xd(PlaybackStatus,2);%t(7)%?mm<|%xd(PlaybackStatus,%mm,1)>;|%?mm<|%xd(PlaybackStatus,%mm,1)>>#Repeat On | Shuffle + Repeat On
 #
 %Vl(Player,76,213,230,14,-)
-%pb(0,0,230,14,Players/Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop)
+%pb(0,0,230,14,Slider.bmp,slider,PlayerSlider,backdrop,SliderBackdrop)
 #
 #--- Volume Overlay ---#
 %?mv(1.2)<%Vd(volume)|>
@@ -141,7 +141,7 @@
 %?and(%if(%pv, <=, -30),%if(%pv, >, -60))<%xd(VolumeIcons,3)>
 %?if(%pv, >, -30)<%xd(VolumeIcons,4)>
 %Vl(volume,116,205,117,5,-)
-%?if(%pv, =, -90)<%xd(VolumeSliderBackdrop)|%pv(0,0,117,5,VolumePrompt/Slider.bmp,slider,VolumeSliderEnd,backdrop,VolumeSliderBackdrop)>
+%?if(%pv, =, -90)<%xd(VolumeSliderBackdrop)|%pv(0,0,117,5,VolumeSlider.bmp,slider,VolumeSliderEnd,backdrop,VolumeSliderBackdrop)>
 #
 #------------ Lockscreen Layer ------------#
 %Vl(Lockscreen,0,0,-,-,-)

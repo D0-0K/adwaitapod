@@ -1,0 +1,40 @@
+<svg width="626" height="668" version="1.1" viewBox="0 0 626 668" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-26493 -8423)">
+  <filter id="a" x="0" y="0" width="1" height="1">
+   <feColorMatrix in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+  </filter>
+  <mask>
+   <g filter="url(#a)">
+    <rect width="16" height="16" fill-opacity=".95"/>
+   </g>
+  </mask>
+  <clipPath>
+   <rect width="192" height="152"/>
+  </clipPath>
+  <mask>
+   <g filter="url(#a)">
+    <rect width="16" height="16" fill-opacity=".75"/>
+   </g>
+  </mask>
+  <clipPath>
+   <rect width="192" height="152"/>
+  </clipPath>
+  <mask>
+   <g filter="url(#a)">
+    <rect width="16" height="16" fill-opacity=".4"/>
+   </g>
+  </mask>
+  <clipPath>
+   <rect width="192" height="152"/>
+  </clipPath>
+  <mask>
+   <g filter="url(#a)">
+    <rect width="16" height="16" fill-opacity=".8"/>
+   </g>
+  </mask>
+  <clipPath>
+   <rect width="192" height="152"/>
+  </clipPath>
+  <path d="m26575 8423c-45.5 0-82.1 36.6-82.1 82.2v503c0 45.5 36.6 82.2 82.1 82.2h502c23.1 0 41.7-18.6 41.7-41.7v-459c0-23.1-18.6-41.7-41.7-41.7h-501c-23.1 0-41.7-18.6-41.7-41.7s18.6-41.7 41.7-41.7h501c0-23.3-18.4-41.7-41.7-41.7zm318 209c9.83 0 17.7 7.89 17.7 17.7 0 9.8-7.9 17.7-17.7 17.7h-174c-9.83 0-17.7-7.88-17.7-17.7 0-9.85 7.9-17.7 17.7-17.7zm-257 119h340c9.83 0 17.7 7.97 17.7 17.8 0 9.85-7.9 17.7-17.7 17.7h-340c-9.83 0-17.7-7.88-17.7-17.7 0-9.8 7.9-17.8 17.7-17.8z"/>
+ </g>
+</svg>

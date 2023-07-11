@@ -1,0 +1,362 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,figure,blockquote,dl,dd{margin:0;}
+html,body,div,header,nav,main,article,footer,input,svg,label{max-width:none;}
+body{font-family:Cantarell, sans-serif;text-rendering:optimizeSpeed;min-height:100vh;line-height:1.45;}
+ 
+@font-face {
+  font-family: "Cantarell var";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("/fonts/Cantarell-VF.woff2") format("woff2"),
+    url("/fonts/Cantarell-VF.otf") format("opentype");
+}
+
+header {
+	padding: 2vw 4vw 4vw 4vw;
+}
+
+a {
+	text-decoration: none;
+}
+
+.flex_header {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.Logo { 
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	padding-left: calc(15pt + 50px + 18%);
+}
+
+.Logo img {
+	width: 75vw;
+max-width: 200px;
+}
+
+.flex_header .button {
+	margin:auto 9%
+}
+
+.button {
+    margin-top: 8px;
+	float: left;
+}
+
+.Blue_Button {
+	background: #3584e4;
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	padding:12px 25px;
+	border-radius: 100px;
+	font-size: 12pt;
+}
+
+.Blue_Button:hover {
+	background: #4990e7;
+}
+
+.Blue_Button:focus {
+	background: #2a6ab6;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 900;
+	margin: 4vw auto;
+}
+
+.entry {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 100%;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.entry img {
+	width: 80%;
+	max-width: 600px;
+	margin: 5%;
+}
+
+.entry_text {
+    margin: auto 20px;
+    max-width: 480px;
+    text-align: left;
+}
+
+.download_entry {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 100%;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.download_entry img {
+	width: 80%;
+	max-width: 600px;
+	margin:0 5%;
+}
+
+.download_entry_text {
+    margin: 5% 20px 0;
+    max-width: 480px;
+    text-align: left;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 18pt;
+	line-height: 1.25;
+	max-width: 368px;
+	margin-bottom: 20px;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #225594;
+	max-width: 650px;
+	margin: 40px auto;
+}
+
+.vr {
+	border-right: 1px solid #eee;	
+	max-height:333px;height: 100vw;
+	margin-top: 240px;
+}
+
+.divider {
+	background: #eee;
+	display: none;
+	width: 80%;
+    height: 1px;
+    max-width: 300px;
+    margin:10px 10% 40px 10%;
+}
+
+p {
+	max-width: 306px;
+}
+
+.Blue_Section {
+	background: #3584e4;
+	color: white;
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 4vw 4vw 2vw;
+}
+
+.Blue_Section h1 {
+	margin: 0;
+}
+
+.Blue_Section iframe {
+	margin: 4vw 0;
+	aspect-ratio: 16 / 9;
+	height: auto;
+	width: 70vw;
+	min-width: 275px;
+}
+
+.comparison {
+	max-width: 375px;
+	text-align: center;
+	min-width: 275px;
+}
+
+.comparison h2 {
+	font-size: 20pt;
+	line-height: 1.5;
+	margin: 12px 0;
+	color: 343434;
+}
+
+.comparison img {
+	min-width: 275px;
+}
+
+.comparison p {
+	margin:auto;
+	max-width: 275px;
+	font-size: 12pt;
+    color: 343434;
+}
+
+ul {
+	list-style: inside;
+	padding: 0px;
+	line-height: 2.5;
+	margin: 25px 0;
+}
+
+.Grey_Section {
+	background: #343434;
+	color: white;
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 0.1px 4vw;
+}
+
+.Grey_Section .entry {
+}
+
+.DownloadBox {
+	background: #f6f5f4;
+	padding: 2vw;
+	margin: 0 auto 6%;
+	border-radius: 32px;
+	max-width: 850px;
+	width: 85%;
+}
+
+.DownloadBox hr {
+	background: #e0dfde;
+	width: 80%;
+}
+
+.DownloadBox .button {
+	margin: 38px 0;
+}
+
+input[type=submit]:hover {
+	background-color: #f9f9f9;
+}
+
+input[type=submit]:focus {
+	background-color: #efefef;
+}
+
+input[type=submit] {
+	font-family: Cantarell;
+      border: none;
+	  background: none;
+	  margin-top: -65px;
+	  float: right;
+	  font-size: 18px;
+	  font-weight: 600;
+	  border-radius: 0 22px 22px 0;
+	  padding: 27 0 26 0;
+	  color: #5e5c64;
+	  cursor: pointer;
+	  width: 25%;
+}
+
+.Grey_Button {
+	float: none;
+	margin: 32px auto;
+}
+
+.Grey_Button a {
+	background:#f6f5f4;
+	color:black;
+	font-weight: 600;
+	padding:12px 25px;
+	border-radius: 100px;
+	font-size: 12pt;
+}
+
+.Grey_Button a:hover {
+	background:#ececec;
+}
+
+.Grey_Button a:focus {
+	background:#dadada;
+}
+
+.DownloadBox .Grey_Button a {
+ 	background:#e6e6e6;
+	color:black;	
+	border-radius: 12px;
+ }
+
+.DownloadBox .Grey_Button a:hover {
+ 	background:#dcdcdc;
+ }
+
+.DownloadBox .Grey_Button a:focus {
+ 	background:#bebebe;
+ }
+
+.Install_Button {
+	color: #7d7d7d;
+	margin: 0 0 0 16px;
+	font-weight: 600;
+	padding: 8px 16px;
+	border-radius: 8px;
+	transition:all .25s;
+
+}
+
+.Install_Button:hover {
+	background:#dcdcdc;
+	color:black;
+}
+
+.Install_Button:focus {
+	background:#bebebe;
+	color:black;
+}
+
+
+@media (max-width: 750px) {
+ .Logo {
+   padding-left: 0;
+   margin: 5vw;
+ }
+ .flex_header .Button {
+ 	margin: 8vw 9%;
+ }
+ .vr {
+ 	display: none;
+ }
+
+ .divider {
+ 	display: block;
+ 	}
+
+ .Blue_Section iframe {
+ 	width: 90vw;
+ }
+
+ .wiki_image {
+ 	display: none;
+ }
+
+ .Grey_Button {
+ 	text-align: center;
+ }
+
+ .DownloadBox .Button {
+ 	float: none;
+  	text-align: center;	
+ }
+ .DownloadBox hr {
+ 	margin: 20px auto 40px;
+ }
+}
+
+@media (max-width: 420px) {
+input[type=submit] {
+      font-size: 14px
+}
+
+.Install_Button {
+	display: flex;
+	margin: 24px auto 0;
+	width: 103px;
+	}
+
+.DownloadBox .button {
+  margin: 38px 0 10px;
+}
+}
