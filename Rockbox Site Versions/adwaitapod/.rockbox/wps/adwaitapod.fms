@@ -14,7 +14,7 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 3.0
+#                   adwaitapod - version 3.1
 #                         Dook  2023
 #                          CC-BY-SA
 #
@@ -100,7 +100,7 @@
 # If Set to Numerical, turn off rounded corners #
 %?if(%St(volume display), =, graphic)<%?C<%xd(TLoverlay)%xd(TRoverlay)%xd(BLoverlay)%xd(BRoverlay)>>
 #
-%Vl(Player,10,136,-10,28,6)%ac%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
+%Vl(Player,10,136,-10,28,6)%ac%s%?tm<%?tx<%ty|FM Radio>|%Tn>
 %Vl(Player,10,157,-10,21,5)%ac%s%?tx<%tz|adwaitapod>
 #
 %Vl(Player,9,215,59,20,4)
@@ -134,7 +134,7 @@
 #---Notification---#
 %Vl(Lockscreen,16,150,288,75,-)%xd(NotificationMusic)
 %Vl(Lockscreen,261,180,12,14,-)%?mp<|||||||%xd(LockPlayIcon,1)|%xd(LockPlayIcon,2)>
-%Vl(Lockscreen,93,163,158,20,4)%Vf(ffffff)%al%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
+%Vl(Lockscreen,93,163,158,20,4)%Vf(ffffff)%al%s%?tm<%?tx<%ty|FM Radio>|%Tn>
 %Vl(Lockscreen,93,183,158,22,3)%Vf(ffffff)%al%s%?tx<%tz|adwaitapod>
 #
 #------------ Always on Display ------------#
@@ -150,5 +150,5 @@
 %Vl(AlwaysOnDisplay,0,32,-,55,7)%Vf(000000)%ac%?cf<%cH:%cM|%cl:%cM %cP>
 %Vl(AlwaysOnDisplay,0,101,-,20,3)%Vf(000000)%ac%?if(%ss(0,7,%St(lang)), =, english)<%?cu<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>|%ca> %?or(%if(%ss(0,7,%St(lang)), =, chinese),%if(%St(lang), =, magyar),%if(%St(lang), =, lietuviu),%if(%St(lang), =, japanese),%if(%St(lang), =, korean))<%cb %cd|%?if(%St(lang), =, english-us)<%cb %cd|%cd %cb>>
 #
-%Vl(AlwaysOnDisplay,10,163,-10,20,4)%Vf(000000)%ac%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
+%Vl(AlwaysOnDisplay,10,163,-10,20,4)%Vf(000000)%ac%s%?tm<%?tx<%ty|FM Radio>|%Tn>
 %Vl(AlwaysOnDisplay,10,183,-10,22,3)%Vf(000000)%ac%s%?tx<%tz|adwaitapod>

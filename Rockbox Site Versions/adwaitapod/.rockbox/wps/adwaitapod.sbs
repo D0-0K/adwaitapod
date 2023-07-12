@@ -14,7 +14,7 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 3.0
+#                   adwaitapod - version 3.1
 #                         Dook  2023
 #                          CC-BY-SA
 #
@@ -194,7 +194,7 @@
 %Vl(MiniMusic,187,175,130,22,4)
 %s%ac%?it<%?if(%St(statusbar), =,off)<%t(6)%ia;%t(6)%id;%t(0)>%?if(%St(statusbar), =,top)<%id>%?if(%St(statusbar), =,bottom)<%ia>|%d(1)>
 #
-%Vl(MiniRadio,187,156,130,20,3)%ac%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
+%Vl(MiniRadio,187,156,130,20,3)%ac%s%?tm<%?tx<%ty|FM Radio>|%Tn>
 %Vl(MiniRadio,187,175,130,22,4)%ac%s%?tx<%tz|adwaitapod>
 #
 %Vl(MiniMusic,195,210,16,14,-)%xd(ShuffleIcon,%ps)
@@ -219,7 +219,7 @@
 %Vl(LockMusic,93,183,158,22,4)%Vf(ffffff)
 %s%al%?it<%?if(%St(statusbar), =,off)<%t(6)%ia;%t(6)%id;%t(0)>%?if(%St(statusbar), =,top)<%id>%?if(%St(statusbar), =,bottom)<%ia>|%d(1)>
 #
-%Vl(LockRadio,93,163,158,20,3)%Vf(ffffff)%al%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
+%Vl(LockRadio,93,163,158,20,3)%Vf(ffffff)%al%s%?tm<%?tx<%ty|FM Radio>|%Tn>
 %Vl(LockRadio,93,183,158,22,4)%Vf(ffffff)%al%s%?tx<%tz|adwaitapod>
 %Vl(LockPlayer,261,180,12,14,-)%?mp<|%xd(LockPlayIcon,1)|%xd(LockPlayIcon,2)|||||%xd(LockPlayIcon,1)|%xd(LockPlayIcon,2)>
 #
@@ -254,7 +254,7 @@
 %Vl(AODMusic,10,183,-10,22,4)%Vf(000000)
 %s%ac%?it<%?if(%St(statusbar), =,off)<%t(6)%ia;%t(6)%id>%?if(%St(statusbar), =,top)<%id>%?if(%St(statusbar), =,bottom)<%ia>|%d(1)>
 #
-%Vl(AODRadio,10,163,-10,20,3)%Vf(000000)%ac%s%?tm<%?tx<%ty|%Sx(FM Radio)>|%Tn>
+%Vl(AODRadio,10,163,-10,20,3)%Vf(000000)%ac%s%?tm<%?tx<%ty|FM Radio>|%Tn>
 %Vl(AODRadio,10,183,-10,22,4)%Vf(000000)%ac%s%?tx<%tz|adwaitapod>
 #
 #------------ Quickscreen Layer ------------#
@@ -387,5 +387,5 @@
 %Vl(SysInfo,98,164,58,22,4)%VBTheme
 %Vl(SysInfo,161,164,139,22,4)%VB%Vf(6b6d6b)%aradwaitapod light
 %Vl(SysInfo,98,200,58,22,4)%VB%Sx(Version)
-%Vl(SysInfo,220,200,80,22,4)%VB%Vf(6b6d6b)%ar3.0
+%Vl(SysInfo,220,200,75,22,4)%VB%Vf(6b6d6b)%ar3.1
 %Vl(SysInfo,88,220,220,20,4)%VB%xd(BoxBottomSmall))

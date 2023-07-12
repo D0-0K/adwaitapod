@@ -14,7 +14,7 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 3.0
+#                   adwaitapod - version 3.1
 #                         Dook  2023
 #                          CC-BY-SA
 #
@@ -96,7 +96,7 @@
 %Vl(Player,24,4,16,16,-)%?mh<%xd(HoldIcon,%mh)|%xd(SleepIcon,%bs)>
 %Vl(Player,44,4,16,16,-)%?mh<%xd(SleepIcon,%bs)|>
 %Vl(Player,4,4,16,16,-)%xd(PlayIcon,%mp)
-%Vl(Player,303,4,14,16,-)%?bp<%xd(ChargingIcon,%bl)|%xd(BatteryIcon,%bl)>
+%Vl(Player,303,4,14,16,-)%xd(BatteryIcon,7)
 #
 %Vl(Player,283,4,16,16,-)
 %?lh<%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll)>
