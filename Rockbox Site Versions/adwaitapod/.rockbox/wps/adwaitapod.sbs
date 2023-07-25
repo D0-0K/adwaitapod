@@ -14,7 +14,7 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 3.2
+#                   adwaitapod - version 3.3
 #                         Dook  2023
 #                          CC-BY-SA
 #
@@ -387,5 +387,5 @@
 %Vl(SysInfo,98,164,58,22,4)%VBTheme
 %Vl(SysInfo,161,164,139,22,4)%VB%Vf(6b6d6b)%aradwaitapod light
 %Vl(SysInfo,98,200,58,22,4)%VB%Sx(Version)
-%Vl(SysInfo,220,200,75,22,4)%VB%Vf(6b6d6b)%ar3.2
+%Vl(SysInfo,220,200,75,22,4)%VB%Vf(6b6d6b)%ar3.3
 %Vl(SysInfo,88,220,220,20,4)%VB%xd(BoxBottomSmall))

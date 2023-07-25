@@ -14,7 +14,7 @@
 #                          '808
 #                            '0
 #
-#                   adwaitapod - version 3.2
+#                   adwaitapod - version 3.3
 #                         Dook  2023
 #                          CC-BY-SA
 #
@@ -158,7 +158,7 @@
 #
 %Vl(StatusBar,4,4,16,16,-)%?mh<%xd(HoldIcon,%mh)|%xd(SleepIcon,%bs)>
 %Vl(StatusBar,24,4,16,16,-)%?mh<%xd(SleepIcon,%bs)|>
-%Vl(StatusBar,303,4,14,16,-)%xd(BatteryIcon,8)
+%Vl(StatusBar,303,4,14,16,-)%?bp<%xd(ChargingIcon,%bl)|%xd(BatteryIcon,%bl)>
 %Vl(StatusBar,283,4,16,16,-)
 %?lh<%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll)>
 #
@@ -387,5 +387,5 @@
 %Vl(SysInfo,98,164,58,22,4)%VBTheme
 %Vl(SysInfo,161,164,139,22,4)%VB%Vf(6b6d6b)%aradwaitapod light
 %Vl(SysInfo,98,200,58,22,4)%VB%Sx(Version)
-%Vl(SysInfo,160,200,135,22,4)%VB%Vf(6b6d6b)%arsimplified 3.2
+%Vl(SysInfo,160,200,135,22,4)%VB%Vf(6b6d6b)%arsimplified 3.3
 %Vl(SysInfo,88,220,220,20,4)%VB%xd(BoxBottomSmall))
