@@ -7,3 +7,14 @@ Adwaitapod is a modern, feature-rich UI for Apple iPod classic models 5th thru 7
 This Ui theme makes use of the Cantarell font, alongside the adwaita icon set. Noto Sans CJK is used to provide CJK font support.
 
  **All extras can be found in the releases section to the side.**
+
+ ---
+ 
+
+## Contributing to the Project
+
+Adwaitapod itself does not have a massive need for extra hands, however I'm always open to getting feedback from users on features and improvements.
+
+If you happen to be a developer with experience in C and wish to help adwaitapod indirectly, I highly encourage you to consider [contributing to Rockbox itself](https://www.rockbox.org/wiki/ContributingToRockbox). The team of developers on the project is small, and have little free time to work on it. I've made a [list of features](https://d00k.net/wiki/rockbox_advanced/missing_features/) I believe could be added to Rockbox's theming engine in order to improve themes all around, and would help in improving the adwaitapod experience. If you'd like more information about things on this list, send me an [email](https://d00k.net/about/)!
+
+Donating to the Rockbox Project will also help adwaitapod. I donate a chunk of my tips to the project each year, but you can also find a link on the [Rockbox homepage](https://www.rockbox.org/) to do so directly.
