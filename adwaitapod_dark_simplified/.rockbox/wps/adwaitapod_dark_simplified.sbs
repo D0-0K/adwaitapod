@@ -296,7 +296,7 @@
 %Vl(QuickButtons,165,140,141,38,-)%xd(Icons,2)%xd(ButtonEnd,2)%xd(ButtonUp,2)%dr(0,0,-,-,3982e7)
 %Vl(QuickButtons,196,149,80,19,3)%Sx(Brightness)
 #-- Down --#
-%Vl(QuickButtons,165,188,141,38,-)%xd(Icons,2)%xd(ButtonEnd,2)%xd(ButtonUp,2)%dr(0,0,-,-,3982e7)
+%Vl(QuickButtons,165,188,141,38,-)%xd(Icons,2)%xd(ButtonEnd,2)%xd(ButtonDown,2)%dr(0,0,-,-,3982e7)
 %Vl(QuickButtons,196,197,80,19,3)%Sx(Brightness)
 #
 #------------ Recording Screen Layer ------------#
